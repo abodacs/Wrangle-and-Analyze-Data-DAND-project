@@ -43,6 +43,8 @@ The tasks for this project were:
 * `wrangle_act.ipynb`: The main file containing all the gathering, wrangling and analyzing work.
 * `wrangle_report`: Briefly describes my wrangling efforts.
 
+(Check the wrangling [here](http://htmlpreview.github.io/?https://github.com/abodacs/Wrangle-and-Analyze-Data-DAND-project/blob/master/wrangle_act.html) and the visualization [here](http://htmlpreview.github.io/?https://github.com/abodacs/Wrangle-and-Analyze-Data-DAND-project/blob/master/act_report.html))
+
 ## Resources
 
 * Twitter API
