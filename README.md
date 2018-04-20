@@ -60,7 +60,7 @@ The tasks for this project were:
 * numpy
 * pandas
 * requests
-* requests
+* tweepy
 * json
 * matplotlib.pyplot
 
