@@ -12098,15 +12098,25 @@ memory usage: 152.1+ KB
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Query the Twitter API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file.</strong></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CONSUMER_KEY</span> <span class="o">=</span> <span class="s2">&quot;JSv4svalatebxzuPLYqv8ct9q&quot;</span>
-<span class="n">CONSUMER_SECRET</span> <span class="o">=</span> <span class="s2">&quot;LqJs6vP6YfZDLsfxTienpPnrM0CdpFoIm0vzBAOrmURfGXcqHF&quot;</span>
-<span class="n">OAUTH_TOKEN</span> <span class="o">=</span> <span class="s2">&quot;233843128-AYyLRc9XoogPQZttkgSgAmcUjpkgzwJI149lRPkk&quot;</span>
-<span class="n">OAUTH_TOKEN_SECRET</span> <span class="o">=</span> <span class="s2">&quot;4LfwTDhgVDN6qfNtMONJwI0Eym4u9HlyFfq2x9lj81zYC&quot;</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">CONSUMER_KEY</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">CONSUMER_SECRET</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">OAUTH_TOKEN</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">OAUTH_TOKEN_SECRET</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> 
 </pre></div>
 
 </div>
@@ -12116,7 +12126,7 @@ memory usage: 152.1+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">auth</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">OAuthHandler</span><span class="p">(</span><span class="n">CONSUMER_KEY</span><span class="p">,</span> <span class="n">CONSUMER_SECRET</span><span class="p">)</span>
@@ -12131,7 +12141,7 @@ memory usage: 152.1+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># List of the error tweets</span>
@@ -12178,17 +12188,17 @@ memory usage: 152.1+ KB
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>888202515573088257 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-873697596434513921 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-869988702071779329 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-866816280283807744 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-861769973181624320 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-845459076796616705 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-842892208864923648 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-837012587749474308 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-827228250799742977 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-802247111496568832 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
-775096608509886464 _ [{&#39;code&#39;: 144, &#39;message&#39;: &#39;No status found with that ID.&#39;}]
+<pre>888202515573088257 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+873697596434513921 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+869988702071779329 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+866816280283807744 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+861769973181624320 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+845459076796616705 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+842892208864923648 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+837012587749474308 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+827228250799742977 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+802247111496568832 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
+775096608509886464 _ [{&#39;message&#39;: &#39;No status found with that ID.&#39;, &#39;code&#39;: 144}]
 </pre>
 </div>
 </div>
@@ -12197,8 +12207,7 @@ memory usage: 152.1+ KB
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Rate limit reached. Sleeping for: 122
-Rate limit reached. Sleeping for: 120
+<pre>Rate limit reached. Sleeping for: 330
 </pre>
 </div>
 </div>
@@ -12207,7 +12216,8 @@ Rate limit reached. Sleeping for: 120
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2245.448455810547
+<pre>714141408463036416 _ Failed to send request: EOF occurred in violation of protocol (_ssl.c:719)
+3023.67219209671
 </pre>
 </div>
 </div>
@@ -12218,7 +12228,7 @@ Rate limit reached. Sleeping for: 120
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># lengh of the result</span>
@@ -12239,8 +12249,8 @@ Rate limit reached. Sleeping for: 120
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The lengh of the result 2345
-The lengh of the errors 11
+<pre>The lengh of the result 2344
+The lengh of the errors 12
 </pre>
 </div>
 </div>
@@ -12257,8 +12267,8 @@ The lengh of the errors 11
 <p>From the above results:</p>
 <ul>
 <li>We reached the limit of the tweepy API three times but wait_on_rate_limit automatically wait for rate limits to re-establish and wait_on_rate_limit_notify print a notification when Tweepy is waiting.</li>
-<li>We could get 2345 tweet_id correctly with 11 errors</li>
-<li>The total time was about 2469 seconds (~ 37.5 min)</li>
+<li>We could get 2344 tweet_id correctly with 12 errors</li>
+<li>The total time was about 3023 seconds (~ 50.5 min)</li>
 </ul>
 
 </div>
@@ -12266,7 +12276,7 @@ The lengh of the errors 11
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The length of the result&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_list</span><span class="p">))</span>
@@ -12284,7 +12294,7 @@ The lengh of the errors 11
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The length of the result 2345
+<pre>The length of the result 2344
 </pre>
 </div>
 </div>
@@ -12295,7 +12305,7 @@ The lengh of the errors 11
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create DataFrames from list of dictionaries</span>
@@ -12312,7 +12322,7 @@ The lengh of the errors 11
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read the saved tweet_json.txt file into a dataframe</span>
@@ -12329,7 +12339,7 @@ The lengh of the errors 11
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[26]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -12363,235 +12373,235 @@ The lengh of the errors 11
     <tr>
       <th>0</th>
       <td>892420643555336193</td>
-      <td>38963</td>
-      <td>8637</td>
-      <td>6604923</td>
-      <td>132952</td>
+      <td>38952</td>
+      <td>8636</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-08-01 16:23:56</td>
     </tr>
     <tr>
       <th>1</th>
       <td>892177421306343426</td>
       <td>33352</td>
-      <td>6345</td>
-      <td>6604923</td>
-      <td>132952</td>
+      <td>6343</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-08-01 00:17:27</td>
     </tr>
     <tr>
       <th>2</th>
       <td>891815181378084864</td>
-      <td>25129</td>
-      <td>4211</td>
-      <td>6604923</td>
-      <td>132952</td>
+      <td>25127</td>
+      <td>4209</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-31 00:18:03</td>
     </tr>
     <tr>
       <th>3</th>
       <td>891689557279858688</td>
-      <td>42296</td>
-      <td>8756</td>
-      <td>6604924</td>
-      <td>132952</td>
+      <td>42300</td>
+      <td>8755</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-30 15:58:51</td>
     </tr>
     <tr>
       <th>4</th>
       <td>891327558926688256</td>
-      <td>40459</td>
-      <td>9519</td>
-      <td>6604924</td>
-      <td>132952</td>
+      <td>40458</td>
+      <td>9517</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-29 16:00:24</td>
     </tr>
     <tr>
       <th>5</th>
       <td>891087950875897856</td>
-      <td>20291</td>
-      <td>3155</td>
-      <td>6604925</td>
-      <td>132952</td>
+      <td>20292</td>
+      <td>3154</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-29 00:08:17</td>
     </tr>
     <tr>
       <th>6</th>
       <td>890971913173991426</td>
       <td>11899</td>
-      <td>2103</td>
-      <td>6604925</td>
-      <td>132952</td>
+      <td>2100</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-28 16:27:12</td>
     </tr>
     <tr>
       <th>7</th>
       <td>890729181411237888</td>
-      <td>65803</td>
-      <td>19149</td>
-      <td>6604925</td>
-      <td>132952</td>
+      <td>65802</td>
+      <td>19146</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-28 00:22:40</td>
     </tr>
     <tr>
       <th>8</th>
       <td>890609185150312448</td>
       <td>27870</td>
-      <td>4320</td>
-      <td>6604927</td>
-      <td>132952</td>
+      <td>4319</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-27 16:25:51</td>
     </tr>
     <tr>
       <th>9</th>
       <td>890240255349198849</td>
-      <td>32058</td>
-      <td>7518</td>
-      <td>6604927</td>
-      <td>132952</td>
+      <td>32054</td>
+      <td>7514</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-26 15:59:51</td>
     </tr>
     <tr>
       <th>10</th>
       <td>890006608113172480</td>
       <td>30764</td>
-      <td>7437</td>
-      <td>6604928</td>
-      <td>132952</td>
+      <td>7436</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-26 00:31:25</td>
     </tr>
     <tr>
       <th>11</th>
       <td>889880896479866881</td>
-      <td>27894</td>
-      <td>5028</td>
-      <td>6604928</td>
-      <td>132952</td>
+      <td>27891</td>
+      <td>5027</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-25 16:11:53</td>
     </tr>
     <tr>
       <th>12</th>
       <td>889665388333682689</td>
-      <td>48277</td>
+      <td>48276</td>
       <td>10188</td>
-      <td>6604928</td>
-      <td>132952</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-25 01:55:32</td>
     </tr>
     <tr>
       <th>13</th>
       <td>889638837579907072</td>
-      <td>27276</td>
-      <td>4600</td>
-      <td>6604930</td>
-      <td>132952</td>
+      <td>27279</td>
+      <td>4598</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-25 00:10:02</td>
     </tr>
     <tr>
       <th>14</th>
       <td>889531135344209921</td>
-      <td>15141</td>
+      <td>15140</td>
       <td>2262</td>
-      <td>6604930</td>
-      <td>132952</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-24 17:02:04</td>
     </tr>
     <tr>
       <th>15</th>
       <td>889278841981685760</td>
-      <td>25391</td>
-      <td>5502</td>
-      <td>6604930</td>
-      <td>132952</td>
+      <td>25392</td>
+      <td>5501</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-24 00:19:32</td>
     </tr>
     <tr>
       <th>16</th>
       <td>888917238123831296</td>
-      <td>29193</td>
+      <td>29190</td>
       <td>4564</td>
-      <td>6604931</td>
-      <td>132952</td>
+      <td>6629272</td>
+      <td>132918</td>
       <td>2017-07-23 00:22:39</td>
     </tr>
     <tr>
       <th>17</th>
       <td>888804989199671297</td>
-      <td>25693</td>
-      <td>4398</td>
-      <td>6604931</td>
-      <td>132952</td>
+      <td>25692</td>
+      <td>4396</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-22 16:56:37</td>
     </tr>
     <tr>
       <th>18</th>
       <td>888554962724278272</td>
-      <td>20004</td>
-      <td>3632</td>
-      <td>6604930</td>
-      <td>132952</td>
+      <td>19997</td>
+      <td>3629</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-22 00:23:06</td>
     </tr>
     <tr>
       <th>19</th>
       <td>888078434458587136</td>
-      <td>21852</td>
-      <td>3544</td>
-      <td>6604930</td>
-      <td>132952</td>
+      <td>21848</td>
+      <td>3543</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-20 16:49:33</td>
     </tr>
     <tr>
       <th>20</th>
       <td>887705289381826560</td>
-      <td>30304</td>
+      <td>30303</td>
       <td>5464</td>
-      <td>6604930</td>
-      <td>132952</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-19 16:06:48</td>
     </tr>
     <tr>
       <th>21</th>
       <td>887517139158093824</td>
-      <td>46412</td>
-      <td>11808</td>
-      <td>6604931</td>
-      <td>132952</td>
+      <td>46409</td>
+      <td>11807</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-19 03:39:09</td>
     </tr>
     <tr>
       <th>22</th>
       <td>887473957103951883</td>
-      <td>69386</td>
-      <td>18458</td>
-      <td>6604931</td>
-      <td>132952</td>
+      <td>69376</td>
+      <td>18454</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-19 00:47:34</td>
     </tr>
     <tr>
       <th>23</th>
       <td>887343217045368832</td>
-      <td>33816</td>
-      <td>10536</td>
-      <td>6604931</td>
-      <td>132952</td>
+      <td>33815</td>
+      <td>10533</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-18 16:08:03</td>
     </tr>
     <tr>
       <th>24</th>
       <td>887101392804085760</td>
-      <td>30674</td>
-      <td>6039</td>
-      <td>6604681</td>
-      <td>132953</td>
+      <td>30668</td>
+      <td>6038</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-18 00:07:08</td>
     </tr>
     <tr>
       <th>25</th>
       <td>886983233522544640</td>
-      <td>35292</td>
-      <td>7864</td>
-      <td>6604933</td>
-      <td>132952</td>
+      <td>35288</td>
+      <td>7862</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-17 16:17:36</td>
     </tr>
     <tr>
@@ -12599,26 +12609,26 @@ The lengh of the errors 11
       <td>886736880519319552</td>
       <td>12124</td>
       <td>3340</td>
-      <td>6604933</td>
-      <td>132952</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-16 23:58:41</td>
     </tr>
     <tr>
       <th>27</th>
       <td>886680336477933568</td>
-      <td>22522</td>
+      <td>22519</td>
       <td>4528</td>
-      <td>6604933</td>
-      <td>132952</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-16 20:14:00</td>
     </tr>
     <tr>
       <th>28</th>
       <td>886366144734445568</td>
       <td>21198</td>
-      <td>3226</td>
-      <td>6604934</td>
-      <td>132952</td>
+      <td>3225</td>
+      <td>6629273</td>
+      <td>132918</td>
       <td>2017-07-15 23:25:31</td>
     </tr>
     <tr>
@@ -12626,8 +12636,8 @@ The lengh of the errors 11
       <td>886267009285017600</td>
       <td>116</td>
       <td>4</td>
-      <td>6604935</td>
-      <td>132952</td>
+      <td>6629274</td>
+      <td>132918</td>
       <td>2017-07-15 16:51:35</td>
     </tr>
     <tr>
@@ -12640,278 +12650,278 @@ The lengh of the errors 11
       <td>...</td>
     </tr>
     <tr>
-      <th>2315</th>
+      <th>2314</th>
       <td>666411507551481857</td>
-      <td>451</td>
+      <td>450</td>
       <td>333</td>
-      <td>6605838</td>
-      <td>132954</td>
+      <td>6629797</td>
+      <td>132918</td>
       <td>2015-11-17 00:24:19</td>
     </tr>
     <tr>
-      <th>2316</th>
+      <th>2315</th>
       <td>666407126856765440</td>
       <td>111</td>
       <td>41</td>
-      <td>6605838</td>
-      <td>132954</td>
+      <td>6629799</td>
+      <td>132918</td>
       <td>2015-11-17 00:06:54</td>
     </tr>
     <tr>
-      <th>2317</th>
+      <th>2316</th>
       <td>666396247373291520</td>
       <td>168</td>
       <td>87</td>
-      <td>6605838</td>
-      <td>132954</td>
+      <td>6629800</td>
+      <td>132918</td>
       <td>2015-11-16 23:23:41</td>
     </tr>
     <tr>
-      <th>2318</th>
+      <th>2317</th>
       <td>666373753744588802</td>
       <td>191</td>
-      <td>95</td>
-      <td>6605839</td>
-      <td>132954</td>
+      <td>94</td>
+      <td>6629800</td>
+      <td>132918</td>
       <td>2015-11-16 21:54:18</td>
     </tr>
     <tr>
-      <th>2319</th>
+      <th>2318</th>
       <td>666362758909284353</td>
       <td>785</td>
       <td>579</td>
-      <td>6605840</td>
-      <td>132954</td>
+      <td>6629800</td>
+      <td>132918</td>
       <td>2015-11-16 21:10:36</td>
     </tr>
     <tr>
-      <th>2320</th>
+      <th>2319</th>
       <td>666353288456101888</td>
       <td>223</td>
       <td>74</td>
-      <td>6605841</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 20:32:58</td>
     </tr>
     <tr>
-      <th>2321</th>
+      <th>2320</th>
       <td>666345417576210432</td>
       <td>301</td>
       <td>142</td>
-      <td>6605841</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 20:01:42</td>
     </tr>
     <tr>
-      <th>2322</th>
+      <th>2321</th>
       <td>666337882303524864</td>
       <td>199</td>
-      <td>94</td>
-      <td>6605841</td>
-      <td>132954</td>
+      <td>93</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 19:31:45</td>
     </tr>
     <tr>
-      <th>2323</th>
+      <th>2322</th>
       <td>666293911632134144</td>
       <td>513</td>
       <td>359</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 16:37:02</td>
     </tr>
     <tr>
-      <th>2324</th>
+      <th>2323</th>
       <td>666287406224695296</td>
       <td>151</td>
       <td>68</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 16:11:11</td>
     </tr>
     <tr>
-      <th>2325</th>
+      <th>2324</th>
       <td>666273097616637952</td>
       <td>178</td>
       <td>77</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 15:14:19</td>
     </tr>
     <tr>
-      <th>2326</th>
+      <th>2325</th>
       <td>666268910803644416</td>
       <td>105</td>
       <td>36</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 14:57:41</td>
     </tr>
     <tr>
-      <th>2327</th>
+      <th>2326</th>
       <td>666104133288665088</td>
-      <td>14457</td>
-      <td>6691</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>14451</td>
+      <td>6690</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 04:02:55</td>
     </tr>
     <tr>
-      <th>2328</th>
+      <th>2327</th>
       <td>666102155909144576</td>
       <td>80</td>
       <td>13</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 03:55:04</td>
     </tr>
     <tr>
-      <th>2329</th>
+      <th>2328</th>
       <td>666099513787052032</td>
       <td>158</td>
-      <td>71</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>70</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 03:44:34</td>
     </tr>
     <tr>
-      <th>2330</th>
+      <th>2329</th>
       <td>666094000022159362</td>
       <td>166</td>
       <td>76</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 03:22:39</td>
     </tr>
     <tr>
-      <th>2331</th>
+      <th>2330</th>
       <td>666082916733198337</td>
       <td>120</td>
       <td>45</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 02:38:37</td>
     </tr>
     <tr>
-      <th>2332</th>
+      <th>2331</th>
       <td>666073100786774016</td>
       <td>326</td>
       <td>169</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629801</td>
+      <td>132918</td>
       <td>2015-11-16 01:59:36</td>
     </tr>
     <tr>
-      <th>2333</th>
+      <th>2332</th>
       <td>666071193221509120</td>
       <td>148</td>
       <td>62</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629802</td>
+      <td>132918</td>
       <td>2015-11-16 01:52:02</td>
     </tr>
     <tr>
-      <th>2334</th>
+      <th>2333</th>
       <td>666063827256086533</td>
       <td>480</td>
       <td>223</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629802</td>
+      <td>132918</td>
       <td>2015-11-16 01:22:45</td>
     </tr>
     <tr>
-      <th>2335</th>
+      <th>2334</th>
       <td>666058600524156928</td>
       <td>113</td>
       <td>58</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629802</td>
+      <td>132918</td>
       <td>2015-11-16 01:01:59</td>
     </tr>
     <tr>
-      <th>2336</th>
+      <th>2335</th>
       <td>666057090499244032</td>
-      <td>299</td>
+      <td>298</td>
       <td>142</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629802</td>
+      <td>132918</td>
       <td>2015-11-16 00:55:59</td>
     </tr>
     <tr>
-      <th>2337</th>
+      <th>2336</th>
       <td>666055525042405380</td>
-      <td>441</td>
+      <td>440</td>
       <td>257</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629802</td>
+      <td>132918</td>
       <td>2015-11-16 00:49:46</td>
     </tr>
     <tr>
-      <th>2338</th>
+      <th>2337</th>
       <td>666051853826850816</td>
       <td>1231</td>
       <td>859</td>
-      <td>6605842</td>
-      <td>132954</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-16 00:35:11</td>
     </tr>
     <tr>
-      <th>2339</th>
+      <th>2338</th>
       <td>666050758794694657</td>
       <td>133</td>
       <td>58</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-16 00:30:50</td>
     </tr>
     <tr>
-      <th>2340</th>
+      <th>2339</th>
       <td>666049248165822465</td>
       <td>109</td>
       <td>40</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-16 00:24:50</td>
     </tr>
     <tr>
-      <th>2341</th>
+      <th>2340</th>
       <td>666044226329800704</td>
       <td>301</td>
       <td>141</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-16 00:04:52</td>
     </tr>
     <tr>
-      <th>2342</th>
+      <th>2341</th>
       <td>666033412701032449</td>
       <td>125</td>
-      <td>45</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>44</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-15 23:21:54</td>
     </tr>
     <tr>
-      <th>2343</th>
+      <th>2342</th>
       <td>666029285002620928</td>
       <td>131</td>
       <td>47</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-15 23:05:30</td>
     </tr>
     <tr>
-      <th>2344</th>
+      <th>2343</th>
       <td>666020888022790149</td>
-      <td>2560</td>
+      <td>2561</td>
       <td>520</td>
-      <td>6605843</td>
-      <td>132954</td>
+      <td>6629803</td>
+      <td>132918</td>
       <td>2015-11-15 22:32:08</td>
     </tr>
   </tbody>
 </table>
-<p>2345 rows × 6 columns</p>
+<p>2344 rows × 6 columns</p>
 </div>
 </div>
 
@@ -12923,7 +12933,7 @@ The lengh of the errors 11
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tweet_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -12942,14 +12952,14 @@ The lengh of the errors 11
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 2345 entries, 0 to 2344
+RangeIndex: 2344 entries, 0 to 2343
 Data columns (total 6 columns):
-tweet_id           2345 non-null int64
-favorites          2345 non-null int64
-retweets           2345 non-null int64
-user_followers     2345 non-null int64
-user_favourites    2345 non-null int64
-date_time          2345 non-null object
+tweet_id           2344 non-null int64
+favorites          2344 non-null int64
+retweets           2344 non-null int64
+user_followers     2344 non-null int64
+user_favourites    2344 non-null int64
+date_time          2344 non-null object
 dtypes: int64(5), object(1)
 memory usage: 110.0+ KB
 </pre>
@@ -12990,11 +13000,11 @@ memory usage: 110.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Print some random examples</span>
-<span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">twitter_archive</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13006,18 +13016,253 @@ memory usage: 110.0+ KB
 
 
 <div class="output_area">
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[17]:</div>
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-28-f578cbaece05&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># Print some random examples</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>twitter_archive_clean<span class="ansi-yellow-intense-fg ansi-bold">.</span>sample<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;twitter_archive_clean&#39; is not defined</pre>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tweet_id</th>
+      <th>in_reply_to_status_id</th>
+      <th>in_reply_to_user_id</th>
+      <th>timestamp</th>
+      <th>source</th>
+      <th>text</th>
+      <th>retweeted_status_id</th>
+      <th>retweeted_status_user_id</th>
+      <th>retweeted_status_timestamp</th>
+      <th>expanded_urls</th>
+      <th>rating_numerator</th>
+      <th>rating_denominator</th>
+      <th>name</th>
+      <th>doggo</th>
+      <th>floofer</th>
+      <th>pupper</th>
+      <th>puppo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>389</th>
+      <td>826476773533745153</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-01-31 17:06:32 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Pilot. He has mastered the synchronize...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/826476773...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Pilot</td>
+      <td>doggo</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1124</th>
+      <td>730211855403241472</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016-05-11 01:44:07 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Ziva. She doesn't know how her collar ...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/730211855...</td>
+      <td>11</td>
+      <td>10</td>
+      <td>Ziva</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1629</th>
+      <td>684567543613382656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016-01-06 02:49:55 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Bobby. He doesn't give a damn about pe...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/684567543...</td>
+      <td>4</td>
+      <td>10</td>
+      <td>Bobby</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1555</th>
+      <td>688894073864884227</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016-01-18 01:22:00 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Hamrick. He's covered in corn flakes. ...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/688894073...</td>
+      <td>7</td>
+      <td>10</td>
+      <td>Hamrick</td>
+      <td>None</td>
+      <td>None</td>
+      <td>pupper</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>284</th>
+      <td>838921590096166913</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-03-07 01:17:48 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Arlo. He's officially the king of snow...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/838921590...</td>
+      <td>13</td>
+      <td>10</td>
+      <td>Arlo</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1803</th>
+      <td>676948236477857792</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2015-12-16 02:13:31 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Karl. Karl thinks he's slick. 6/10 sne...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/676948236...</td>
+      <td>6</td>
+      <td>10</td>
+      <td>Karl</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1684</th>
+      <td>681679526984871937</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2015-12-29 03:33:58 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>Can you spot Toby the guilty pupper? 7/10 woul...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/681679526...</td>
+      <td>7</td>
+      <td>10</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>pupper</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1304</th>
+      <td>707411934438625280</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2016-03-09 03:45:22 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>"I shall trip the big pupper with leash. Big p...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/707411934...</td>
+      <td>11</td>
+      <td>10</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>pupper</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>418</th>
+      <td>822462944365645825</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-01-20 15:17:01 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Gabe. He was the unequivocal embodimen...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/822462944...</td>
+      <td>14</td>
+      <td>10</td>
+      <td>Gabe</td>
+      <td>None</td>
+      <td>None</td>
+      <td>pupper</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>863432100342583297</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-05-13 16:33:49 +0000</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>This is Belle. She's never been more pupset. E...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>https://twitter.com/dog_rates/status/863432100...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Belle</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -13026,7 +13271,7 @@ memory usage: 110.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Assessing the data programmaticaly</span>
@@ -13076,72 +13321,72 @@ memory usage: 313.0+ KB
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[29]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>None              745
-a                  55
-Charlie            12
-Cooper             11
-Oliver             11
-Lucy               11
-Lola               10
-Tucker             10
-Penny              10
-Winston             9
-Bo                  9
-Sadie               8
-the                 8
-Buddy               7
-Bailey              7
-an                  7
-Toby                7
-Daisy               7
-Bella               6
-Milo                6
-Jax                 6
-Stanley             6
-Oscar               6
-Leo                 6
-Koda                6
-Dave                6
-Scout               6
-Jack                6
-Rusty               6
-Gus                 5
-                 ... 
-Spark               1
-Binky               1
-Carter              1
-Kanu                1
-Dudley              1
-Ruffles             1
-Philippe            1
-Todo                1
-Gin                 1
-Andru               1
-Jim                 1
-Lolo                1
-Snickers            1
-Sephie              1
-Asher               1
-Rumpole             1
-Clarkus             1
-Jerome              1
-Michelangelope      1
-Ridley              1
-Darrel              1
-Hall                1
-Acro                1
-Taz                 1
-space               1
-Harlso              1
-Toffee              1
-Samsom              1
-Brutus              1
-Shawwn              1
+<pre>None         745
+a             55
+Charlie       12
+Oliver        11
+Cooper        11
+Lucy          11
+Lola          10
+Tucker        10
+Penny         10
+Bo             9
+Winston        9
+the            8
+Sadie          8
+an             7
+Buddy          7
+Bailey         7
+Daisy          7
+Toby           7
+Jack           6
+Jax            6
+Dave           6
+Oscar          6
+Stanley        6
+Koda           6
+Scout          6
+Rusty          6
+Leo            6
+Bella          6
+Milo           6
+George         5
+            ... 
+Cannon         1
+Meatball       1
+Cermet         1
+by             1
+Lizzie         1
+Kial           1
+Grizz          1
+Ulysses        1
+Amber          1
+Tassy          1
+Pawnd          1
+Cheryl         1
+Maxwell        1
+Pancake        1
+Vixen          1
+Grizzwald      1
+Gerbald        1
+Rinna          1
+Bert           1
+Eugene         1
+Bobb           1
+Ebby           1
+Ridley         1
+Ester          1
+Glacier        1
+Kody           1
+Koko           1
+Skittle        1
+Trigger        1
+Akumi          1
 Name: name, Length: 957, dtype: int64</pre>
 </div>
 
@@ -13153,7 +13398,7 @@ Name: name, Length: 957, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View descriptive statistics of twitter_archive</span>
@@ -13169,7 +13414,7 @@ Name: name, Length: 957, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[30]:</div>
+<div class="prompt output_prompt">Out[19]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -13294,7 +13539,7 @@ Name: name, Length: 957, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_predictions</span>
@@ -13309,7 +13554,7 @@ Name: name, Length: 957, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[31]:</div>
+<div class="prompt output_prompt">Out[20]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14275,12 +14520,12 @@ Name: name, Length: 957, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_predictions</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 <span class="n">image_predictions</span><span class="p">[</span><span class="s1">&#39;jpg_url&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-<span class="n">image_predictions</span><span class="p">[</span><span class="n">image_predictions_clean</span><span class="p">[</span><span class="s1">&#39;jpg_url&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;https://pbs.twimg.com/media/DF6hr6BUMAAzZgT.jpg&#39;</span><span class="p">]</span>
+<span class="n">image_predictions</span><span class="p">[</span><span class="n">image_predictions</span><span class="p">[</span><span class="s1">&#39;jpg_url&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;https://pbs.twimg.com/media/DF6hr6BUMAAzZgT.jpg&#39;</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14317,19 +14562,63 @@ memory usage: 152.1+ KB
 </div>
 
 <div class="output_area">
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[21]:</div>
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-32-031c41b6b0a1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      1</span> image_predictions<span class="ansi-yellow-intense-fg ansi-bold">.</span>info<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      2</span> image_predictions<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;jpg_url&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>value_counts<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>image_predictions<span class="ansi-yellow-intense-fg ansi-bold">[</span>image_predictions_clean<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;jpg_url&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">==</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;https://pbs.twimg.com/media/DF6hr6BUMAAzZgT.jpg&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
 
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;image_predictions_clean&#39; is not defined</pre>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>tweet_id</th>
+      <th>jpg_url</th>
+      <th>img_num</th>
+      <th>p1</th>
+      <th>p1_conf</th>
+      <th>p1_dog</th>
+      <th>p2</th>
+      <th>p2_conf</th>
+      <th>p2_dog</th>
+      <th>p3</th>
+      <th>p3_conf</th>
+      <th>p3_dog</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2070</th>
+      <td>891327558926688256</td>
+      <td>https://pbs.twimg.com/media/DF6hr6BUMAAzZgT.jpg</td>
+      <td>2</td>
+      <td>basset</td>
+      <td>0.555712</td>
+      <td>True</td>
+      <td>English_springer</td>
+      <td>0.22577</td>
+      <td>True</td>
+      <td>German_short-haired_pointer</td>
+      <td>0.175219</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -14338,7 +14627,7 @@ memory usage: 152.1+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View number of entries for each source</span>
@@ -14354,7 +14643,7 @@ memory usage: 152.1+ KB
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[33]:</div>
+<div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14374,7 +14663,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#For rating that don&#39;t follow pattern</span>
@@ -14390,7 +14679,7 @@ Name: source, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[34]:</div>
+<div class="prompt output_prompt">Out[23]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -14925,7 +15214,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#unusual names</span>
@@ -14941,7 +15230,7 @@ Name: source, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[35]:</div>
+<div class="prompt output_prompt">Out[24]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16217,7 +16506,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Orignal Tweets </span>
@@ -16233,7 +16522,7 @@ Name: source, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[36]:</div>
+<div class="prompt output_prompt">Out[25]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -17565,7 +17854,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#copy dataframes</span>
@@ -17600,7 +17889,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">twitter_archive_clean</span><span class="p">,</span>
@@ -17614,7 +17903,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span> <span class="o">=</span> <span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">image_predictions_clean</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
@@ -17636,7 +17925,7 @@ Name: source, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -17655,43 +17944,43 @@ Name: source, dtype: int64</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-Int64Index: 2069 entries, 0 to 2068
+Int64Index: 2068 entries, 0 to 2067
 Data columns (total 33 columns):
-tweet_id                      2069 non-null int64
+tweet_id                      2068 non-null int64
 in_reply_to_status_id         23 non-null float64
 in_reply_to_user_id           23 non-null float64
-timestamp                     2069 non-null object
-source                        2069 non-null object
-text                          2069 non-null object
+timestamp                     2068 non-null object
+source                        2068 non-null object
+text                          2068 non-null object
 retweeted_status_id           75 non-null float64
 retweeted_status_user_id      75 non-null float64
 retweeted_status_timestamp    75 non-null object
-expanded_urls                 2069 non-null object
-rating_numerator              2069 non-null int64
-rating_denominator            2069 non-null int64
-name                          2069 non-null object
-doggo                         2069 non-null object
-floofer                       2069 non-null object
-pupper                        2069 non-null object
-puppo                         2069 non-null object
-favorites                     2069 non-null int64
-retweets                      2069 non-null int64
-user_followers                2069 non-null int64
-user_favourites               2069 non-null int64
-date_time                     2069 non-null object
-jpg_url                       2069 non-null object
-img_num                       2069 non-null int64
-p1                            2069 non-null object
-p1_conf                       2069 non-null float64
-p1_dog                        2069 non-null bool
-p2                            2069 non-null object
-p2_conf                       2069 non-null float64
-p2_dog                        2069 non-null bool
-p3                            2069 non-null object
-p3_conf                       2069 non-null float64
-p3_dog                        2069 non-null bool
+expanded_urls                 2068 non-null object
+rating_numerator              2068 non-null int64
+rating_denominator            2068 non-null int64
+name                          2068 non-null object
+doggo                         2068 non-null object
+floofer                       2068 non-null object
+pupper                        2068 non-null object
+puppo                         2068 non-null object
+favorites                     2068 non-null int64
+retweets                      2068 non-null int64
+user_followers                2068 non-null int64
+user_favourites               2068 non-null int64
+date_time                     2068 non-null object
+jpg_url                       2068 non-null object
+img_num                       2068 non-null int64
+p1                            2068 non-null object
+p1_conf                       2068 non-null float64
+p1_dog                        2068 non-null bool
+p2                            2068 non-null object
+p2_conf                       2068 non-null float64
+p2_dog                        2068 non-null bool
+p3                            2068 non-null object
+p3_conf                       2068 non-null float64
+p3_dog                        2068 non-null bool
 dtypes: bool(3), float64(7), int64(8), object(15)
-memory usage: 507.1+ KB
+memory usage: 506.9+ KB
 </pre>
 </div>
 </div>
@@ -17721,7 +18010,7 @@ memory usage: 507.1+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Select the columns to melt and to remain</span>
@@ -17752,7 +18041,7 @@ memory usage: 507.1+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">dog_stage</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
@@ -17771,13 +18060,13 @@ memory usage: 507.1+ KB
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>None       7942
+<pre>None       7938
 pupper      222
 doggo        80
 puppo        24
 floofer       8
 Name: dog_stage, dtype: int64
-8276
+8272
 </pre>
 </div>
 </div>
@@ -17807,7 +18096,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Delete the retweets</span>
@@ -17832,12 +18121,12 @@ Name: dog_stage, dtype: int64
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[43]:</div>
+<div class="prompt output_prompt">Out[32]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2311</pre>
+<pre>2310</pre>
 </div>
 
 </div>
@@ -17848,7 +18137,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Delete columns related to retweet we don&#39;t need anymore</span>
@@ -17872,7 +18161,7 @@ Name: dog_stage, dtype: int64
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[44]:</div>
+<div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -17913,7 +18202,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Delete dog_stage duplicates</span>
@@ -17936,7 +18225,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">dog_stage</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
@@ -17955,13 +18244,13 @@ Name: dog_stage, dtype: int64
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>None       1688
+<pre>None       1687
 pupper      212
 doggo        63
 puppo        23
 floofer       8
 Name: dog_stage, dtype: int64
-1994
+1993
 </pre>
 </div>
 </div>
@@ -17991,7 +18280,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We will store the fisrt true algorithm with it&#39;s level of confidence</span>
@@ -18036,7 +18325,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">twitter_archive_clean</span><span class="p">)</span>
@@ -18051,7 +18340,7 @@ Name: dog_stage, dtype: int64
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[48]:</div>
+<div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -18094,7 +18383,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Delete the columns of image prediction information</span>
@@ -18108,7 +18397,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">twitter_archive_clean</span><span class="p">)</span>
@@ -18123,7 +18412,7 @@ Name: dog_stage, dtype: int64
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[50]:</div>
+<div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -18156,7 +18445,7 @@ Name: dog_stage, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s concentrate on low values.. let&#39;s dig more</span>
@@ -18182,41 +18471,39 @@ Name: dog_stage, dtype: int64
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-Int64Index: 1994 entries, 0 to 7092
+Int64Index: 1993 entries, 0 to 7089
 Data columns (total 18 columns):
-tweet_id                 1994 non-null int64
+tweet_id                 1993 non-null int64
 in_reply_to_status_id    23 non-null float64
 in_reply_to_user_id      23 non-null float64
-timestamp                1994 non-null object
-source                   1994 non-null object
-text                     1994 non-null object
-expanded_urls            1994 non-null object
-rating_numerator         1994 non-null int64
-rating_denominator       1994 non-null int64
-name                     1994 non-null object
-favorites                1994 non-null int64
-retweets                 1994 non-null int64
-user_followers           1994 non-null int64
-user_favourites          1994 non-null int64
-jpg_url                  1994 non-null object
-dog_stage                1994 non-null object
-prediction_algorithm     1994 non-null object
-confidence_level         1994 non-null float64
+timestamp                1993 non-null object
+source                   1993 non-null object
+text                     1993 non-null object
+expanded_urls            1993 non-null object
+rating_numerator         1993 non-null int64
+rating_denominator       1993 non-null int64
+name                     1993 non-null object
+favorites                1993 non-null int64
+retweets                 1993 non-null int64
+user_followers           1993 non-null int64
+user_favourites          1993 non-null int64
+jpg_url                  1993 non-null object
+dog_stage                1993 non-null object
+prediction_algorithm     1993 non-null object
+confidence_level         1993 non-null float64
 dtypes: float64(3), int64(7), object(8)
-memory usage: 296.0+ KB
+memory usage: 295.8+ KB
 in_reply_to_user_id 
 4.196984e+09    23
 Name: in_reply_to_user_id, dtype: int64
 source 
-&lt;a href=&#34;http://twitter.com/download/iphone&#34; rel=&#34;nofollow&#34;&gt;Twitter for iPhone&lt;/a&gt;     1955
+&lt;a href=&#34;http://twitter.com/download/iphone&#34; rel=&#34;nofollow&#34;&gt;Twitter for iPhone&lt;/a&gt;     1954
 &lt;a href=&#34;http://twitter.com&#34; rel=&#34;nofollow&#34;&gt;Twitter Web Client&lt;/a&gt;                       28
 &lt;a href=&#34;https://about.twitter.com/products/tweetdeck&#34; rel=&#34;nofollow&#34;&gt;TweetDeck&lt;/a&gt;      11
 Name: source, dtype: int64
 user_favourites 
-132953    1578
-132952     212
-132954     203
-132955       1
+132918    1973
+132916      20
 Name: user_favourites, dtype: int64
 </pre>
 </div>
@@ -18242,7 +18529,7 @@ Name: user_favourites, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># drop the following columns &#39;in_reply_to_status_id&#39;, &#39;in_reply_to_user_id&#39;, &#39;user_favourites&#39;</span>
@@ -18256,7 +18543,7 @@ Name: user_favourites, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Clean the content of source column</span>
@@ -18270,7 +18557,7 @@ Name: user_favourites, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test</span>
@@ -18286,7 +18573,7 @@ Name: user_favourites, dtype: int64
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[54]:</div>
+<div class="prompt output_prompt">Out[43]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -18336,9 +18623,9 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>Phineas</td>
-      <td>38963</td>
-      <td>8637</td>
-      <td>6604923</td>
+      <td>38952</td>
+      <td>8636</td>
+      <td>6629272</td>
       <td>https://pbs.twimg.com/media/DGKD1-bXoAAIAUK.jpg</td>
       <td>None</td>
       <td>NaN</td>
@@ -18346,168 +18633,6 @@ Name: user_favourites, dtype: int64
     </tr>
     <tr>
       <th>1461</th>
-      <td>680055455951884288</td>
-      <td>2015-12-24 16:00:30 +0000</td>
-      <td>TweetDeck</td>
-      <td>Meet Sammy. At first I was like "that's a snow...</td>
-      <td>https://twitter.com/dog_rates/status/680055455...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>Sammy</td>
-      <td>17921</td>
-      <td>7868</td>
-      <td>6605568</td>
-      <td>https://pbs.twimg.com/media/CW-ZRC_WQAAyFrL.jpg</td>
-      <td>None</td>
-      <td>Samoyed</td>
-      <td>0.995466</td>
-    </tr>
-    <tr>
-      <th>1460</th>
-      <td>680070545539371008</td>
-      <td>2015-12-24 17:00:27 +0000</td>
-      <td>TweetDeck</td>
-      <td>Say hello to Emmie. She's trapped in an orname...</td>
-      <td>https://twitter.com/dog_rates/status/680070545...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>Emmie</td>
-      <td>2756</td>
-      <td>967</td>
-      <td>6605568</td>
-      <td>https://pbs.twimg.com/media/CW-dU34WQAANBGy.jpg</td>
-      <td>None</td>
-      <td>Shih-Tzu</td>
-      <td>0.121811</td>
-    </tr>
-    <tr>
-      <th>1459</th>
-      <td>680085611152338944</td>
-      <td>2015-12-24 18:00:19 +0000</td>
-      <td>TweetDeck</td>
-      <td>This is by far the most coordinated series of ...</td>
-      <td>https://twitter.com/dog_rates/status/680085611...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>by</td>
-      <td>13701</td>
-      <td>9803</td>
-      <td>6605568</td>
-      <td>https://pbs.twimg.com/media/CXAiiHUWkAIN_28.jpg</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1457</th>
-      <td>680115823365742593</td>
-      <td>2015-12-24 20:00:22 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Ozzy. He woke up 2 minutes before he h...</td>
-      <td>https://twitter.com/dog_rates/status/680115823...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>Ozzy</td>
-      <td>2903</td>
-      <td>1006</td>
-      <td>6605568</td>
-      <td>https://pbs.twimg.com/media/CXBBurSWMAELewi.jpg</td>
-      <td>None</td>
-      <td>pug</td>
-      <td>0.999365</td>
-    </tr>
-    <tr>
-      <th>1456</th>
-      <td>680130881361686529</td>
-      <td>2015-12-24 21:00:12 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Reggie. His Santa hat is a little big....</td>
-      <td>https://twitter.com/dog_rates/status/680130881...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>Reggie</td>
-      <td>2461</td>
-      <td>1048</td>
-      <td>6605568</td>
-      <td>https://pbs.twimg.com/media/CXBPbVtWAAA2Vus.jpg</td>
-      <td>None</td>
-      <td>Maltese_dog</td>
-      <td>0.199121</td>
-    </tr>
-    <tr>
-      <th>1454</th>
-      <td>680161097740095489</td>
-      <td>2015-12-24 23:00:17 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Meet Goliath. He's an example of irony. Head i...</td>
-      <td>https://twitter.com/dog_rates/status/680161097...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>Goliath</td>
-      <td>2478</td>
-      <td>807</td>
-      <td>6605567</td>
-      <td>https://pbs.twimg.com/media/CXBq6RPWkAAaNuU.jpg</td>
-      <td>None</td>
-      <td>bluetick</td>
-      <td>0.268681</td>
-    </tr>
-    <tr>
-      <th>1451</th>
-      <td>680206703334408192</td>
-      <td>2015-12-25 02:01:30 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>I hope everyone enjoys this picture as much as...</td>
-      <td>https://twitter.com/dog_rates/status/680206703...</td>
-      <td>12</td>
-      <td>10</td>
-      <td>Toby</td>
-      <td>3042</td>
-      <td>1296</td>
-      <td>6605568</td>
-      <td>https://pbs.twimg.com/media/CXCUYcRW8AAObYM.jpg</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1450</th>
-      <td>680221482581123072</td>
-      <td>2015-12-25 03:00:14 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is CeCe. She's patiently waiting for Sant...</td>
-      <td>https://twitter.com/dog_rates/status/680221482...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>CeCe</td>
-      <td>1562</td>
-      <td>321</td>
-      <td>6605567</td>
-      <td>https://pbs.twimg.com/media/CXCh0QZW8AALdXm.jpg</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1449</th>
-      <td>680440374763077632</td>
-      <td>2015-12-25 17:30:01 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Merry Christmas. My gift to you is this tiny u...</td>
-      <td>https://twitter.com/dog_rates/status/680440374...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>None</td>
-      <td>1549</td>
-      <td>553</td>
-      <td>6605567</td>
-      <td>https://pbs.twimg.com/ext_tw_video_thumb/68044...</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1462</th>
       <td>679877062409191424</td>
       <td>2015-12-24 04:11:37 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18518,248 +18643,158 @@ Name: user_favourites, dtype: int64
       <td>Penelope</td>
       <td>2107</td>
       <td>707</td>
-      <td>6605568</td>
+      <td>6629646</td>
       <td>https://pbs.twimg.com/media/CW9olDsUsAA0XSf.jpg</td>
       <td>None</td>
       <td>NaN</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>1446</th>
-      <td>680497766108381184</td>
-      <td>2015-12-25 21:18:05 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Meet Percy. He's a Latvian Yuletide Heineken. ...</td>
-      <td>https://twitter.com/dog_rates/status/680497766...</td>
+      <th>1460</th>
+      <td>680055455951884288</td>
+      <td>2015-12-24 16:00:30 +0000</td>
+      <td>TweetDeck</td>
+      <td>Meet Sammy. At first I was like "that's a snow...</td>
+      <td>https://twitter.com/dog_rates/status/680055455...</td>
+      <td>10</td>
+      <td>10</td>
+      <td>Sammy</td>
+      <td>17919</td>
+      <td>7867</td>
+      <td>6629646</td>
+      <td>https://pbs.twimg.com/media/CW-ZRC_WQAAyFrL.jpg</td>
+      <td>None</td>
+      <td>Samoyed</td>
+      <td>0.995466</td>
+    </tr>
+    <tr>
+      <th>1459</th>
+      <td>680070545539371008</td>
+      <td>2015-12-24 17:00:27 +0000</td>
+      <td>TweetDeck</td>
+      <td>Say hello to Emmie. She's trapped in an orname...</td>
+      <td>https://twitter.com/dog_rates/status/680070545...</td>
+      <td>9</td>
+      <td>10</td>
+      <td>Emmie</td>
+      <td>2755</td>
+      <td>965</td>
+      <td>6629646</td>
+      <td>https://pbs.twimg.com/media/CW-dU34WQAANBGy.jpg</td>
+      <td>None</td>
+      <td>Shih-Tzu</td>
+      <td>0.121811</td>
+    </tr>
+    <tr>
+      <th>1458</th>
+      <td>680085611152338944</td>
+      <td>2015-12-24 18:00:19 +0000</td>
+      <td>TweetDeck</td>
+      <td>This is by far the most coordinated series of ...</td>
+      <td>https://twitter.com/dog_rates/status/680085611...</td>
       <td>12</td>
       <td>10</td>
-      <td>Percy</td>
-      <td>4547</td>
-      <td>2119</td>
-      <td>6605567</td>
-      <td>https://pbs.twimg.com/media/CXGdG0aWcAEbOO1.jpg</td>
-      <td>None</td>
-      <td>Chihuahua</td>
-      <td>0.538354</td>
-    </tr>
-    <tr>
-      <th>1445</th>
-      <td>680583894916304897</td>
-      <td>2015-12-26 03:00:19 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Penny. Her tennis ball slowly rolled d...</td>
-      <td>https://twitter.com/dog_rates/status/680583894...</td>
-      <td>8</td>
-      <td>10</td>
-      <td>Penny</td>
-      <td>3865</td>
-      <td>1478</td>
-      <td>6605566</td>
-      <td>https://pbs.twimg.com/media/CXHrcFYWcAEE5_L.jpg</td>
+      <td>by</td>
+      <td>13700</td>
+      <td>9801</td>
+      <td>6629646</td>
+      <td>https://pbs.twimg.com/media/CXAiiHUWkAIN_28.jpg</td>
       <td>None</td>
       <td>NaN</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>1444</th>
-      <td>680609293079592961</td>
-      <td>2015-12-26 04:41:15 +0000</td>
+      <th>1456</th>
+      <td>680115823365742593</td>
+      <td>2015-12-24 20:00:22 +0000</td>
       <td>Twitter for iPhone</td>
-      <td>This is Brody. That is his chair. He loves his...</td>
-      <td>https://twitter.com/dog_rates/status/680609293...</td>
+      <td>This is Ozzy. He woke up 2 minutes before he h...</td>
+      <td>https://twitter.com/dog_rates/status/680115823...</td>
       <td>9</td>
       <td>10</td>
-      <td>Brody</td>
-      <td>2826</td>
-      <td>791</td>
-      <td>6605566</td>
-      <td>https://pbs.twimg.com/media/CXICiB9UwAE1sKY.jpg</td>
+      <td>Ozzy</td>
+      <td>2904</td>
+      <td>1006</td>
+      <td>6629646</td>
+      <td>https://pbs.twimg.com/media/CXBBurSWMAELewi.jpg</td>
       <td>None</td>
-      <td>French_bulldog</td>
-      <td>0.700764</td>
+      <td>pug</td>
+      <td>0.999365</td>
     </tr>
     <tr>
-      <th>1443</th>
-      <td>680798457301471234</td>
-      <td>2015-12-26 17:12:55 +0000</td>
+      <th>1455</th>
+      <td>680130881361686529</td>
+      <td>2015-12-24 21:00:12 +0000</td>
       <td>Twitter for iPhone</td>
-      <td>Say hello to Moofasa. He must be a powerful do...</td>
-      <td>https://twitter.com/dog_rates/status/680798457...</td>
-      <td>6</td>
+      <td>This is Reggie. His Santa hat is a little big....</td>
+      <td>https://twitter.com/dog_rates/status/680130881...</td>
       <td>10</td>
-      <td>Moofasa</td>
-      <td>3068</td>
-      <td>1153</td>
-      <td>6605566</td>
-      <td>https://pbs.twimg.com/media/CXKuiyHUEAAMAGa.jpg</td>
+      <td>10</td>
+      <td>Reggie</td>
+      <td>2459</td>
+      <td>1047</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXBPbVtWAAA2Vus.jpg</td>
+      <td>None</td>
+      <td>Maltese_dog</td>
+      <td>0.199121</td>
+    </tr>
+    <tr>
+      <th>1453</th>
+      <td>680161097740095489</td>
+      <td>2015-12-24 23:00:17 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Meet Goliath. He's an example of irony. Head i...</td>
+      <td>https://twitter.com/dog_rates/status/680161097...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Goliath</td>
+      <td>2474</td>
+      <td>807</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXBq6RPWkAAaNuU.jpg</td>
+      <td>None</td>
+      <td>bluetick</td>
+      <td>0.268681</td>
+    </tr>
+    <tr>
+      <th>1450</th>
+      <td>680206703334408192</td>
+      <td>2015-12-25 02:01:30 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>I hope everyone enjoys this picture as much as...</td>
+      <td>https://twitter.com/dog_rates/status/680206703...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Toby</td>
+      <td>3042</td>
+      <td>1296</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXCUYcRW8AAObYM.jpg</td>
       <td>None</td>
       <td>NaN</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>1442</th>
-      <td>680801747103793152</td>
-      <td>2015-12-26 17:25:59 +0000</td>
+      <th>1449</th>
+      <td>680221482581123072</td>
+      <td>2015-12-25 03:00:14 +0000</td>
       <td>Twitter for iPhone</td>
-      <td>Great picture here. Dog on the right panicked ...</td>
-      <td>https://twitter.com/dog_rates/status/680801747...</td>
+      <td>This is CeCe. She's patiently waiting for Sant...</td>
+      <td>https://twitter.com/dog_rates/status/680221482...</td>
       <td>10</td>
       <td>10</td>
+      <td>CeCe</td>
+      <td>1562</td>
+      <td>321</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXCh0QZW8AALdXm.jpg</td>
       <td>None</td>
-      <td>2541</td>
-      <td>910</td>
-      <td>6605565</td>
-      <td>https://pbs.twimg.com/media/CXKxkseW8AAjAMY.jpg</td>
-      <td>None</td>
-      <td>pug</td>
-      <td>0.996720</td>
+      <td>NaN</td>
+      <td>0.000000</td>
     </tr>
     <tr>
-      <th>1440</th>
-      <td>680889648562991104</td>
-      <td>2015-12-26 23:15:17 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Cheesy. It's her birthday. She's patie...</td>
-      <td>https://twitter.com/dog_rates/status/680889648...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>Cheesy</td>
-      <td>1896</td>
-      <td>406</td>
-      <td>6605561</td>
-      <td>https://pbs.twimg.com/media/CXMBhXfWEAA4mMI.jpg</td>
-      <td>None</td>
-      <td>Shetland_sheepdog</td>
-      <td>0.876337</td>
-    </tr>
-    <tr>
-      <th>1439</th>
-      <td>680913438424612864</td>
-      <td>2015-12-27 00:49:49 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Meet Griswold. He's dapper as hell. Already pu...</td>
-      <td>https://twitter.com/dog_rates/status/680913438...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>Griswold</td>
-      <td>2560</td>
-      <td>683</td>
-      <td>6605561</td>
-      <td>https://pbs.twimg.com/media/CXMXKKHUMAA1QN3.jpg</td>
-      <td>None</td>
-      <td>Pomeranian</td>
-      <td>0.615678</td>
-    </tr>
-    <tr>
-      <th>1438</th>
-      <td>680934982542561280</td>
-      <td>2015-12-27 02:15:25 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Say hello to Sadie. She's a Tortellini Sidewin...</td>
-      <td>https://twitter.com/dog_rates/status/680934982...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>Sadie</td>
-      <td>2229</td>
-      <td>486</td>
-      <td>6605561</td>
-      <td>https://pbs.twimg.com/media/CXMqwIQWcAA2iE0.jpg</td>
-      <td>None</td>
-      <td>Labrador_retriever</td>
-      <td>0.784398</td>
-    </tr>
-    <tr>
-      <th>1437</th>
-      <td>680940246314430465</td>
-      <td>2015-12-27 02:36:20 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Alice. She's an idiot. 4/10 https://t....</td>
-      <td>https://twitter.com/dog_rates/status/680940246...</td>
-      <td>4</td>
-      <td>10</td>
-      <td>Alice</td>
-      <td>3462</td>
-      <td>1172</td>
-      <td>6605561</td>
-      <td>https://pbs.twimg.com/media/CXMvio7WQAAPZJj.jpg</td>
-      <td>None</td>
-      <td>soft-coated_wheaten_terrier</td>
-      <td>0.289598</td>
-    </tr>
-    <tr>
-      <th>1436</th>
-      <td>680959110691590145</td>
-      <td>2015-12-27 03:51:18 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Ozzie. He was doing fine until he lost...</td>
-      <td>https://twitter.com/dog_rates/status/680959110...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>Ozzie</td>
-      <td>4889</td>
-      <td>2197</td>
-      <td>6605561</td>
-      <td>https://pbs.twimg.com/media/CXNAsm6WsAEST9R.jpg</td>
-      <td>None</td>
-      <td>pug</td>
-      <td>0.044357</td>
-    </tr>
-    <tr>
-      <th>1435</th>
-      <td>680970795137544192</td>
-      <td>2015-12-27 04:37:44 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>I thought I made this very clear. We only rate...</td>
-      <td>https://twitter.com/dog_rates/status/680970795...</td>
-      <td>9</td>
-      <td>10</td>
-      <td>None</td>
-      <td>2602</td>
-      <td>727</td>
-      <td>6605560</td>
-      <td>https://pbs.twimg.com/media/CXNLU6wWkAE0OkJ.jpg</td>
-      <td>None</td>
-      <td>pug</td>
-      <td>0.713102</td>
-    </tr>
-    <tr>
-      <th>1434</th>
-      <td>681193455364796417</td>
-      <td>2015-12-27 19:22:30 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Aspen. He's astronomically fluffy. I w...</td>
-      <td>https://twitter.com/dog_rates/status/681193455...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>Aspen</td>
-      <td>3985</td>
-      <td>1642</td>
-      <td>6605559</td>
-      <td>https://pbs.twimg.com/media/CXQV03pWYAAVniz.jpg</td>
-      <td>None</td>
-      <td>Pomeranian</td>
-      <td>0.992619</td>
-    </tr>
-    <tr>
-      <th>1447</th>
-      <td>680494726643068929</td>
-      <td>2015-12-25 21:06:00 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Here we have uncovered an entire battalion of ...</td>
-      <td>https://twitter.com/dog_rates/status/680494726...</td>
-      <td>26</td>
-      <td>10</td>
-      <td>None</td>
-      <td>1839</td>
-      <td>531</td>
-      <td>6605567</td>
-      <td>https://pbs.twimg.com/media/CXGaVxOWAAADjhF.jpg</td>
-      <td>None</td>
-      <td>kuvasz</td>
-      <td>0.438627</td>
-    </tr>
-    <tr>
-      <th>1463</th>
+      <th>1462</th>
       <td>679862121895714818</td>
       <td>2015-12-24 03:12:15 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18770,32 +18805,302 @@ Name: user_favourites, dtype: int64
       <td>None</td>
       <td>2630</td>
       <td>685</td>
-      <td>6605568</td>
+      <td>6629646</td>
       <td>https://pbs.twimg.com/media/CW9a_h1WwAApmAy.jpg</td>
       <td>None</td>
       <td>EntleBucher</td>
       <td>0.523206</td>
     </tr>
     <tr>
-      <th>1465</th>
-      <td>679844490799091713</td>
-      <td>2015-12-24 02:02:12 +0000</td>
+      <th>1448</th>
+      <td>680440374763077632</td>
+      <td>2015-12-25 17:30:01 +0000</td>
       <td>Twitter for iPhone</td>
-      <td>This is Willie. He's floating away and needs y...</td>
-      <td>https://twitter.com/dog_rates/status/679844490...</td>
+      <td>Merry Christmas. My gift to you is this tiny u...</td>
+      <td>https://twitter.com/dog_rates/status/680440374...</td>
+      <td>11</td>
       <td>10</td>
-      <td>10</td>
-      <td>Willie</td>
-      <td>2541</td>
-      <td>862</td>
-      <td>6605572</td>
-      <td>https://pbs.twimg.com/media/CW9K9VeVAAE0j-x.jpg</td>
       <td>None</td>
-      <td>Airedale</td>
-      <td>0.903832</td>
+      <td>1548</td>
+      <td>553</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/ext_tw_video_thumb/68044...</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1446</th>
+      <td>680494726643068929</td>
+      <td>2015-12-25 21:06:00 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Here we have uncovered an entire battalion of ...</td>
+      <td>https://twitter.com/dog_rates/status/680494726...</td>
+      <td>26</td>
+      <td>10</td>
+      <td>None</td>
+      <td>1839</td>
+      <td>531</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXGaVxOWAAADjhF.jpg</td>
+      <td>None</td>
+      <td>kuvasz</td>
+      <td>0.438627</td>
+    </tr>
+    <tr>
+      <th>1445</th>
+      <td>680497766108381184</td>
+      <td>2015-12-25 21:18:05 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Meet Percy. He's a Latvian Yuletide Heineken. ...</td>
+      <td>https://twitter.com/dog_rates/status/680497766...</td>
+      <td>12</td>
+      <td>10</td>
+      <td>Percy</td>
+      <td>4545</td>
+      <td>2117</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXGdG0aWcAEbOO1.jpg</td>
+      <td>None</td>
+      <td>Chihuahua</td>
+      <td>0.538354</td>
+    </tr>
+    <tr>
+      <th>1444</th>
+      <td>680583894916304897</td>
+      <td>2015-12-26 03:00:19 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Penny. Her tennis ball slowly rolled d...</td>
+      <td>https://twitter.com/dog_rates/status/680583894...</td>
+      <td>8</td>
+      <td>10</td>
+      <td>Penny</td>
+      <td>3865</td>
+      <td>1478</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXHrcFYWcAEE5_L.jpg</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1443</th>
+      <td>680609293079592961</td>
+      <td>2015-12-26 04:41:15 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Brody. That is his chair. He loves his...</td>
+      <td>https://twitter.com/dog_rates/status/680609293...</td>
+      <td>9</td>
+      <td>10</td>
+      <td>Brody</td>
+      <td>2826</td>
+      <td>791</td>
+      <td>6629645</td>
+      <td>https://pbs.twimg.com/media/CXICiB9UwAE1sKY.jpg</td>
+      <td>None</td>
+      <td>French_bulldog</td>
+      <td>0.700764</td>
+    </tr>
+    <tr>
+      <th>1442</th>
+      <td>680798457301471234</td>
+      <td>2015-12-26 17:12:55 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Say hello to Moofasa. He must be a powerful do...</td>
+      <td>https://twitter.com/dog_rates/status/680798457...</td>
+      <td>6</td>
+      <td>10</td>
+      <td>Moofasa</td>
+      <td>3069</td>
+      <td>1153</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXKuiyHUEAAMAGa.jpg</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1441</th>
+      <td>680801747103793152</td>
+      <td>2015-12-26 17:25:59 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Great picture here. Dog on the right panicked ...</td>
+      <td>https://twitter.com/dog_rates/status/680801747...</td>
+      <td>10</td>
+      <td>10</td>
+      <td>None</td>
+      <td>2541</td>
+      <td>910</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXKxkseW8AAjAMY.jpg</td>
+      <td>None</td>
+      <td>pug</td>
+      <td>0.996720</td>
+    </tr>
+    <tr>
+      <th>1439</th>
+      <td>680889648562991104</td>
+      <td>2015-12-26 23:15:17 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Cheesy. It's her birthday. She's patie...</td>
+      <td>https://twitter.com/dog_rates/status/680889648...</td>
+      <td>9</td>
+      <td>10</td>
+      <td>Cheesy</td>
+      <td>1894</td>
+      <td>406</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXMBhXfWEAA4mMI.jpg</td>
+      <td>None</td>
+      <td>Shetland_sheepdog</td>
+      <td>0.876337</td>
+    </tr>
+    <tr>
+      <th>1438</th>
+      <td>680913438424612864</td>
+      <td>2015-12-27 00:49:49 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Meet Griswold. He's dapper as hell. Already pu...</td>
+      <td>https://twitter.com/dog_rates/status/680913438...</td>
+      <td>11</td>
+      <td>10</td>
+      <td>Griswold</td>
+      <td>2557</td>
+      <td>683</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXMXKKHUMAA1QN3.jpg</td>
+      <td>None</td>
+      <td>Pomeranian</td>
+      <td>0.615678</td>
+    </tr>
+    <tr>
+      <th>1437</th>
+      <td>680934982542561280</td>
+      <td>2015-12-27 02:15:25 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Say hello to Sadie. She's a Tortellini Sidewin...</td>
+      <td>https://twitter.com/dog_rates/status/680934982...</td>
+      <td>10</td>
+      <td>10</td>
+      <td>Sadie</td>
+      <td>2228</td>
+      <td>486</td>
+      <td>6629393</td>
+      <td>https://pbs.twimg.com/media/CXMqwIQWcAA2iE0.jpg</td>
+      <td>None</td>
+      <td>Labrador_retriever</td>
+      <td>0.784398</td>
+    </tr>
+    <tr>
+      <th>1436</th>
+      <td>680940246314430465</td>
+      <td>2015-12-27 02:36:20 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Alice. She's an idiot. 4/10 https://t....</td>
+      <td>https://twitter.com/dog_rates/status/680940246...</td>
+      <td>4</td>
+      <td>10</td>
+      <td>Alice</td>
+      <td>3462</td>
+      <td>1171</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXMvio7WQAAPZJj.jpg</td>
+      <td>None</td>
+      <td>soft-coated_wheaten_terrier</td>
+      <td>0.289598</td>
+    </tr>
+    <tr>
+      <th>1435</th>
+      <td>680959110691590145</td>
+      <td>2015-12-27 03:51:18 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Ozzie. He was doing fine until he lost...</td>
+      <td>https://twitter.com/dog_rates/status/680959110...</td>
+      <td>9</td>
+      <td>10</td>
+      <td>Ozzie</td>
+      <td>4885</td>
+      <td>2197</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXNAsm6WsAEST9R.jpg</td>
+      <td>None</td>
+      <td>pug</td>
+      <td>0.044357</td>
+    </tr>
+    <tr>
+      <th>1434</th>
+      <td>680970795137544192</td>
+      <td>2015-12-27 04:37:44 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>I thought I made this very clear. We only rate...</td>
+      <td>https://twitter.com/dog_rates/status/680970795...</td>
+      <td>9</td>
+      <td>10</td>
+      <td>None</td>
+      <td>2602</td>
+      <td>727</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXNLU6wWkAE0OkJ.jpg</td>
+      <td>None</td>
+      <td>pug</td>
+      <td>0.713102</td>
+    </tr>
+    <tr>
+      <th>1433</th>
+      <td>681193455364796417</td>
+      <td>2015-12-27 19:22:30 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Aspen. He's astronomically fluffy. I w...</td>
+      <td>https://twitter.com/dog_rates/status/681193455...</td>
+      <td>11</td>
+      <td>10</td>
+      <td>Aspen</td>
+      <td>3981</td>
+      <td>1642</td>
+      <td>6629644</td>
+      <td>https://pbs.twimg.com/media/CXQV03pWYAAVniz.jpg</td>
+      <td>None</td>
+      <td>Pomeranian</td>
+      <td>0.992619</td>
+    </tr>
+    <tr>
+      <th>1463</th>
+      <td>679854723806179328</td>
+      <td>2015-12-24 02:42:51 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Bruce. He's a rare pup. Covered in Fro...</td>
+      <td>https://twitter.com/dog_rates/status/679854723...</td>
+      <td>7</td>
+      <td>10</td>
+      <td>Bruce</td>
+      <td>3075</td>
+      <td>1358</td>
+      <td>6629646</td>
+      <td>https://pbs.twimg.com/media/CW9UQ7oWkAAErmU.jpg</td>
+      <td>None</td>
+      <td>chow</td>
+      <td>0.002307</td>
     </tr>
     <tr>
       <th>1493</th>
+      <td>678446151570427904</td>
+      <td>2015-12-20 05:25:42 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Touching scene here. Really stirs up the emoti...</td>
+      <td>https://twitter.com/dog_rates/status/678446151...</td>
+      <td>10</td>
+      <td>10</td>
+      <td>None</td>
+      <td>4262</td>
+      <td>1736</td>
+      <td>6629651</td>
+      <td>https://pbs.twimg.com/media/CWpTLOYWsAEDhcU.jpg</td>
+      <td>None</td>
+      <td>Staffordshire_bullterrier</td>
+      <td>0.284492</td>
+    </tr>
+    <tr>
+      <th>1492</th>
       <td>678643457146150913</td>
       <td>2015-12-20 18:29:43 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18805,15 +19110,15 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>Grizz</td>
       <td>2197</td>
-      <td>473</td>
-      <td>6605336</td>
+      <td>474</td>
+      <td>6629651</td>
       <td>https://pbs.twimg.com/media/CWsGnyMVEAAM1Y1.jpg</td>
       <td>None</td>
       <td>Labrador_retriever</td>
       <td>0.338757</td>
     </tr>
     <tr>
-      <th>1492</th>
+      <th>1491</th>
       <td>678675843183484930</td>
       <td>2015-12-20 20:38:24 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18822,16 +19127,16 @@ Name: user_favourites, dtype: int64
       <td>2</td>
       <td>10</td>
       <td>None</td>
-      <td>3076</td>
+      <td>3074</td>
       <td>1639</td>
-      <td>6605587</td>
+      <td>6629651</td>
       <td>https://pbs.twimg.com/media/CWskEqnWUAAQZW_.jpg</td>
       <td>None</td>
       <td>NaN</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>1491</th>
+      <th>1490</th>
       <td>678740035362037760</td>
       <td>2015-12-21 00:53:29 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18840,31 +19145,13 @@ Name: user_favourites, dtype: int64
       <td>6</td>
       <td>10</td>
       <td>Tango</td>
-      <td>4013</td>
+      <td>4009</td>
       <td>1882</td>
-      <td>6605587</td>
+      <td>6629651</td>
       <td>https://pbs.twimg.com/media/CWtede2WIAAF_AJ.jpg</td>
       <td>None</td>
       <td>beagle</td>
       <td>0.022525</td>
-    </tr>
-    <tr>
-      <th>1490</th>
-      <td>678755239630127104</td>
-      <td>2015-12-21 01:53:54 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Dash. He didn't think the water would ...</td>
-      <td>https://twitter.com/dog_rates/status/678755239...</td>
-      <td>10</td>
-      <td>10</td>
-      <td>Dash</td>
-      <td>7650</td>
-      <td>3658</td>
-      <td>6605587</td>
-      <td>https://pbs.twimg.com/media/CWtsSQAUkAAnWws.jpg</td>
-      <td>None</td>
-      <td>malamute</td>
-      <td>0.606654</td>
     </tr>
     <tr>
       <th>...</th>
@@ -18885,7 +19172,7 @@ Name: user_favourites, dtype: int64
       <td>...</td>
     </tr>
     <tr>
-      <th>5096</th>
+      <th>5094</th>
       <td>724004602748780546</td>
       <td>2016-04-23 22:38:43 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18894,16 +19181,16 @@ Name: user_favourites, dtype: int64
       <td>11</td>
       <td>10</td>
       <td>Luther</td>
-      <td>4478</td>
+      <td>4477</td>
       <td>1735</td>
-      <td>6605379</td>
+      <td>6629513</td>
       <td>https://pbs.twimg.com/media/CgwuWCeW4AAsgbD.jpg</td>
       <td>pupper</td>
       <td>pug</td>
       <td>0.018877</td>
     </tr>
     <tr>
-      <th>5128</th>
+      <th>5126</th>
       <td>717790033953034240</td>
       <td>2016-04-06 19:04:14 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18914,14 +19201,14 @@ Name: user_favourites, dtype: int64
       <td>None</td>
       <td>3103</td>
       <td>1241</td>
-      <td>6605391</td>
+      <td>6629515</td>
       <td>https://pbs.twimg.com/media/CfYaOeMWQAAGfyP.jpg</td>
       <td>pupper</td>
       <td>NaN</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>5089</th>
+      <th>5087</th>
       <td>725786712245440512</td>
       <td>2016-04-28 20:40:11 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18930,16 +19217,16 @@ Name: user_favourites, dtype: int64
       <td>11</td>
       <td>10</td>
       <td>Lillie</td>
-      <td>4456</td>
+      <td>4454</td>
       <td>1489</td>
-      <td>6605377</td>
+      <td>6629511</td>
       <td>https://pbs.twimg.com/media/ChKDKmIWIAIJP_e.jpg</td>
       <td>pupper</td>
       <td>chow</td>
       <td>0.335761</td>
     </tr>
     <tr>
-      <th>5081</th>
+      <th>5079</th>
       <td>727314416056803329</td>
       <td>2016-05-03 01:50:44 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18948,16 +19235,16 @@ Name: user_favourites, dtype: int64
       <td>11</td>
       <td>10</td>
       <td>None</td>
-      <td>3551</td>
+      <td>3552</td>
       <td>821</td>
-      <td>6605373</td>
+      <td>6629510</td>
       <td>https://pbs.twimg.com/media/Chfwmd9U4AQTf1b.jpg</td>
       <td>pupper</td>
       <td>toy_poodle</td>
       <td>0.827469</td>
     </tr>
     <tr>
-      <th>5080</th>
+      <th>5078</th>
       <td>727524757080539137</td>
       <td>2016-05-03 15:46:33 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18966,16 +19253,16 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>10</td>
       <td>None</td>
-      <td>4790</td>
+      <td>4788</td>
       <td>1348</td>
-      <td>6605372</td>
+      <td>6629510</td>
       <td>https://pbs.twimg.com/media/Chiv6BAW4AAiQvH.jpg</td>
       <td>pupper</td>
       <td>Pomeranian</td>
       <td>0.958834</td>
     </tr>
     <tr>
-      <th>5077</th>
+      <th>5075</th>
       <td>728015554473250816</td>
       <td>2016-05-05 00:16:48 +0000</td>
       <td>Twitter for iPhone</td>
@@ -18984,16 +19271,16 @@ Name: user_favourites, dtype: int64
       <td>11</td>
       <td>10</td>
       <td>Rueben</td>
-      <td>4400</td>
+      <td>4399</td>
       <td>1200</td>
-      <td>6605372</td>
+      <td>6629510</td>
       <td>https://pbs.twimg.com/media/ChpuRyvVAAARMoq.jpg</td>
       <td>pupper</td>
       <td>cocker_spaniel</td>
       <td>0.384559</td>
     </tr>
     <tr>
-      <th>5093</th>
+      <th>5091</th>
       <td>724405726123311104</td>
       <td>2016-04-25 01:12:38 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19002,16 +19289,16 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>10</td>
       <td>Ashleigh</td>
-      <td>5682</td>
+      <td>5684</td>
       <td>1808</td>
-      <td>6605378</td>
+      <td>6629512</td>
       <td>https://pbs.twimg.com/media/Cg2bKLAWwAA0WEm.jpg</td>
       <td>pupper</td>
       <td>golden_retriever</td>
       <td>0.240695</td>
     </tr>
     <tr>
-      <th>6661</th>
+      <th>6658</th>
       <td>802239329049477120</td>
       <td>2016-11-25 19:55:35 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19020,16 +19307,16 @@ Name: user_favourites, dtype: int64
       <td>12</td>
       <td>10</td>
       <td>Loki</td>
-      <td>9945</td>
-      <td>2949</td>
-      <td>6605136</td>
+      <td>9944</td>
+      <td>2948</td>
+      <td>6629330</td>
       <td>https://pbs.twimg.com/media/CyIgaTEVEAA-9zS.jpg</td>
       <td>puppo</td>
       <td>Eskimo_dog</td>
       <td>0.482498</td>
     </tr>
     <tr>
-      <th>7050</th>
+      <th>7047</th>
       <td>744995568523612160</td>
       <td>2016-06-20 20:49:19 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19038,16 +19325,16 @@ Name: user_favourites, dtype: int64
       <td>9</td>
       <td>10</td>
       <td>Abby</td>
-      <td>3219</td>
+      <td>3218</td>
       <td>695</td>
-      <td>6605328</td>
+      <td>6629469</td>
       <td>https://pbs.twimg.com/media/ClbBg4WWEAMjwJu.jpg</td>
       <td>puppo</td>
       <td>Old_English_sheepdog</td>
       <td>0.427481</td>
     </tr>
     <tr>
-      <th>6988</th>
+      <th>6985</th>
       <td>751132876104687617</td>
       <td>2016-07-07 19:16:47 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19056,16 +19343,16 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>10</td>
       <td>Cooper</td>
-      <td>5517</td>
+      <td>5516</td>
       <td>1449</td>
-      <td>6605302</td>
+      <td>6629461</td>
       <td>https://pbs.twimg.com/media/CmyPXNOW8AEtaJ-.jpg</td>
       <td>puppo</td>
       <td>Labrador_retriever</td>
       <td>0.929390</td>
     </tr>
     <tr>
-      <th>6976</th>
+      <th>6973</th>
       <td>752519690950500352</td>
       <td>2016-07-11 15:07:30 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19074,16 +19361,16 @@ Name: user_favourites, dtype: int64
       <td>11</td>
       <td>10</td>
       <td>None</td>
-      <td>7990</td>
+      <td>7988</td>
       <td>3822</td>
-      <td>6605299</td>
+      <td>6629449</td>
       <td>https://pbs.twimg.com/media/CnF8qVDWYAAh0g1.jpg</td>
       <td>puppo</td>
       <td>Labrador_retriever</td>
       <td>0.000010</td>
     </tr>
     <tr>
-      <th>6956</th>
+      <th>6953</th>
       <td>756275833623502848</td>
       <td>2016-07-21 23:53:04 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19092,16 +19379,16 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>10</td>
       <td>None</td>
-      <td>6990</td>
+      <td>6991</td>
       <td>1705</td>
-      <td>6605292</td>
+      <td>6629444</td>
       <td>https://pbs.twimg.com/media/Cn7U2xlW8AI9Pqp.jpg</td>
       <td>puppo</td>
       <td>Airedale</td>
       <td>0.602957</td>
     </tr>
     <tr>
-      <th>6794</th>
+      <th>6791</th>
       <td>780931614150983680</td>
       <td>2016-09-28 00:46:20 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19110,16 +19397,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>None</td>
-      <td>23693</td>
+      <td>23686</td>
       <td>8306</td>
-      <td>6605184</td>
+      <td>6629348</td>
       <td>https://pbs.twimg.com/media/CtZtJxAXEAAyPGd.jpg</td>
       <td>puppo</td>
       <td>NaN</td>
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>6756</th>
+      <th>6753</th>
       <td>787717603741622272</td>
       <td>2016-10-16 18:11:26 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19128,16 +19415,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>Tonks</td>
-      <td>11210</td>
-      <td>3157</td>
-      <td>6605173</td>
+      <td>11206</td>
+      <td>3156</td>
+      <td>6629346</td>
       <td>https://pbs.twimg.com/media/Cu6I9vvWIAAZG0a.jpg</td>
       <td>puppo</td>
       <td>German_shepherd</td>
       <td>0.992339</td>
     </tr>
     <tr>
-      <th>6736</th>
+      <th>6733</th>
       <td>790946055508652032</td>
       <td>2016-10-25 16:00:09 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19146,16 +19433,16 @@ Name: user_favourites, dtype: int64
       <td>12</td>
       <td>10</td>
       <td>Betty</td>
-      <td>18252</td>
+      <td>18249</td>
       <td>5332</td>
-      <td>6605167</td>
+      <td>6629342</td>
       <td>https://pbs.twimg.com/media/CvoBPWRWgAA4het.jpg</td>
       <td>puppo</td>
       <td>golden_retriever</td>
       <td>0.245773</td>
     </tr>
     <tr>
-      <th>6720</th>
+      <th>6717</th>
       <td>793195938047070209</td>
       <td>2016-10-31 21:00:23 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19164,16 +19451,16 @@ Name: user_favourites, dtype: int64
       <td>12</td>
       <td>10</td>
       <td>Lily</td>
-      <td>16771</td>
-      <td>6370</td>
-      <td>6605161</td>
+      <td>16763</td>
+      <td>6369</td>
+      <td>6629337</td>
       <td>https://pbs.twimg.com/media/CwH_foYWgAEvTyI.jpg</td>
       <td>puppo</td>
       <td>Labrador_retriever</td>
       <td>0.654762</td>
     </tr>
     <tr>
-      <th>6651</th>
+      <th>6648</th>
       <td>803773340896923648</td>
       <td>2016-11-30 01:31:12 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19182,16 +19469,16 @@ Name: user_favourites, dtype: int64
       <td>12</td>
       <td>10</td>
       <td>Diogi</td>
-      <td>11017</td>
-      <td>3140</td>
-      <td>6605133</td>
+      <td>11016</td>
+      <td>3139</td>
+      <td>6629327</td>
       <td>https://pbs.twimg.com/media/CyeTku-XcAALkBd.jpg</td>
       <td>puppo</td>
       <td>miniature_pinscher</td>
       <td>0.817066</td>
     </tr>
     <tr>
-      <th>6345</th>
+      <th>6342</th>
       <td>859607811541651456</td>
       <td>2017-05-03 03:17:27 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19200,16 +19487,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>None</td>
-      <td>19158</td>
-      <td>1661</td>
-      <td>6605006</td>
+      <td>19157</td>
+      <td>1660</td>
+      <td>6629293</td>
       <td>https://pbs.twimg.com/media/C-3wvtxXcAUTuBE.jpg</td>
       <td>puppo</td>
       <td>golden_retriever</td>
       <td>0.895529</td>
     </tr>
     <tr>
-      <th>6532</th>
+      <th>6529</th>
       <td>822872901745569793</td>
       <td>2017-01-21 18:26:02 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19218,16 +19505,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>None</td>
-      <td>143917</td>
-      <td>49388</td>
-      <td>6605093</td>
+      <td>143885</td>
+      <td>49372</td>
+      <td>6629319</td>
       <td>https://pbs.twimg.com/media/C2tugXLXgAArJO4.jpg</td>
       <td>puppo</td>
       <td>Lakeland_terrier</td>
       <td>0.196015</td>
     </tr>
     <tr>
-      <th>6520</th>
+      <th>6517</th>
       <td>825026590719483904</td>
       <td>2017-01-27 17:04:02 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19236,16 +19523,16 @@ Name: user_favourites, dtype: int64
       <td>12</td>
       <td>10</td>
       <td>Pablo</td>
-      <td>6902</td>
+      <td>6901</td>
       <td>1444</td>
-      <td>6605085</td>
+      <td>6629316</td>
       <td>https://pbs.twimg.com/media/C3MVTeHWcAAGNfx.jpg</td>
       <td>puppo</td>
       <td>Eskimo_dog</td>
       <td>0.524454</td>
     </tr>
     <tr>
-      <th>6518</th>
+      <th>6515</th>
       <td>825535076884762624</td>
       <td>2017-01-29 02:44:34 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19254,16 +19541,16 @@ Name: user_favourites, dtype: int64
       <td>14</td>
       <td>10</td>
       <td>None</td>
-      <td>56376</td>
-      <td>19280</td>
-      <td>6605083</td>
+      <td>56375</td>
+      <td>19275</td>
+      <td>6629315</td>
       <td>https://pbs.twimg.com/media/C3TjvitXAAAI-QH.jpg</td>
       <td>puppo</td>
       <td>Rottweiler</td>
       <td>0.681495</td>
     </tr>
     <tr>
-      <th>6359</th>
+      <th>6356</th>
       <td>855851453814013952</td>
       <td>2017-04-22 18:31:02 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19272,16 +19559,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>None</td>
-      <td>47127</td>
-      <td>18810</td>
-      <td>6605012</td>
+      <td>47125</td>
+      <td>18806</td>
+      <td>6629293</td>
       <td>https://pbs.twimg.com/media/C-CYWrvWAAU8AXH.jpg</td>
       <td>puppo</td>
       <td>flat-coated_retriever</td>
       <td>0.321676</td>
     </tr>
     <tr>
-      <th>6314</th>
+      <th>6311</th>
       <td>867421006826221569</td>
       <td>2017-05-24 16:44:18 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19291,15 +19578,15 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>Shikha</td>
       <td>16465</td>
-      <td>2617</td>
-      <td>6604988</td>
+      <td>2616</td>
+      <td>6629287</td>
       <td>https://pbs.twimg.com/media/DAmyy8FXYAIH8Ty.jpg</td>
       <td>puppo</td>
       <td>Eskimo_dog</td>
       <td>0.616457</td>
     </tr>
     <tr>
-      <th>6287</th>
+      <th>6284</th>
       <td>874012996292530176</td>
       <td>2017-06-11 21:18:31 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19308,16 +19595,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>Sebastian</td>
-      <td>34909</td>
-      <td>10684</td>
-      <td>6604976</td>
+      <td>34907</td>
+      <td>10683</td>
+      <td>6629281</td>
       <td>https://pbs.twimg.com/media/DCEeLxjXsAAvNSM.jpg</td>
       <td>puppo</td>
       <td>Cardigan</td>
       <td>0.806674</td>
     </tr>
     <tr>
-      <th>6270</th>
+      <th>6267</th>
       <td>878776093423087618</td>
       <td>2017-06-25 00:45:22 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19326,16 +19613,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>Snoopy</td>
-      <td>19460</td>
-      <td>4192</td>
-      <td>6604953</td>
+      <td>19459</td>
+      <td>4189</td>
+      <td>6629278</td>
       <td>https://pbs.twimg.com/media/DDIKMXzW0AEibje.jpg</td>
       <td>puppo</td>
       <td>Italian_greyhound</td>
       <td>0.734684</td>
     </tr>
     <tr>
-      <th>6221</th>
+      <th>6218</th>
       <td>889531135344209921</td>
       <td>2017-07-24 17:02:04 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19344,16 +19631,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>Stuart</td>
-      <td>15141</td>
+      <td>15140</td>
       <td>2262</td>
-      <td>6604930</td>
+      <td>6629272</td>
       <td>https://pbs.twimg.com/media/DFg_2PVW0AEHN3p.jpg</td>
       <td>puppo</td>
       <td>golden_retriever</td>
       <td>0.953442</td>
     </tr>
     <tr>
-      <th>6219</th>
+      <th>6216</th>
       <td>889665388333682689</td>
       <td>2017-07-25 01:55:32 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19362,16 +19649,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>None</td>
-      <td>48277</td>
+      <td>48276</td>
       <td>10188</td>
-      <td>6604928</td>
+      <td>6629272</td>
       <td>https://pbs.twimg.com/media/DFi579UWsAAatzw.jpg</td>
       <td>puppo</td>
       <td>Pembroke</td>
       <td>0.966327</td>
     </tr>
     <tr>
-      <th>7061</th>
+      <th>7058</th>
       <td>743253157753532416</td>
       <td>2016-06-16 01:25:36 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19380,16 +19667,16 @@ Name: user_favourites, dtype: int64
       <td>10</td>
       <td>10</td>
       <td>Kilo</td>
-      <td>4544</td>
+      <td>4545</td>
       <td>1333</td>
-      <td>6605330</td>
+      <td>6629471</td>
       <td>https://pbs.twimg.com/media/ClCQzFUUYAA5vAu.jpg</td>
       <td>puppo</td>
       <td>malamute</td>
       <td>0.442612</td>
     </tr>
     <tr>
-      <th>6552</th>
+      <th>6549</th>
       <td>819952236453363712</td>
       <td>2017-01-13 17:00:21 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19398,16 +19685,16 @@ Name: user_favourites, dtype: int64
       <td>13</td>
       <td>10</td>
       <td>Oliver</td>
-      <td>5806</td>
-      <td>1330</td>
-      <td>6605100</td>
+      <td>5808</td>
+      <td>1329</td>
+      <td>6629321</td>
       <td>https://pbs.twimg.com/media/C2EONHNWQAUWxkP.jpg</td>
       <td>puppo</td>
       <td>American_Staffordshire_terrier</td>
       <td>0.925505</td>
     </tr>
     <tr>
-      <th>7092</th>
+      <th>7089</th>
       <td>738537504001953792</td>
       <td>2016-06-03 01:07:16 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19418,7 +19705,7 @@ Name: user_favourites, dtype: int64
       <td>Bayley</td>
       <td>5476</td>
       <td>1720</td>
-      <td>6605343</td>
+      <td>6629473</td>
       <td>https://pbs.twimg.com/media/Cj_P7rSUgAAYQbz.jpg</td>
       <td>puppo</td>
       <td>chow</td>
@@ -19426,7 +19713,7 @@ Name: user_favourites, dtype: int64
     </tr>
   </tbody>
 </table>
-<p>1994 rows × 15 columns</p>
+<p>1993 rows × 15 columns</p>
 </div>
 </div>
 
@@ -19457,7 +19744,7 @@ Name: user_favourites, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View all occurences where there are more than one #/# in &#39;text&#39; column</span>
@@ -19485,38 +19772,38 @@ Name: user_favourites, dtype: int64
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[55]:</div>
+<div class="prompt output_prompt">Out[44]:</div>
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>1401    This is Darrel. He just robbed a 7/11 and is i...
-1523    Meet Tassy &amp;amp; Bee. Tassy is pretty chill, b...
-1557    These two pups just met and have instantly bon...
-1230    Meet Oliviér. He takes killer selfies. Has a d...
-1225    This may be the greatest video I&#39;ve ever been ...
-1135    This is Socks. That water pup w the super legs...
-1623    Two gorgeous dogs here. Little waddling dog is...
-1265    When bae says they can&#39;t go out but you see th...
-1291    Meet Fynn &amp;amp; Taco. Fynn is an all-powerful ...
-1280    This is Eriq. His friend just reminded him of ...
-1977    This is Kial. Kial is either wearing a cape, w...
-1986    Two dogs in this one. Both are rare Jujitsu Py...
-1893    Here we have Pancho and Peaches. Pancho is a C...
-1930    This is Spark. He&#39;s nervous. Other dog hasn&#39;t ...
-2019    These are Peruvian Feldspars. Their names are ...
-2048    This is an Albanian 3 1/2 legged  Episcopalian...
-1728    10/10 for dog. 7/10 for cat. 12/10 for human. ...
-1830    Meet Hank and Sully. Hank is very proud of the...
-1781    Meet Holly. She&#39;s trying to teach small human-...
+<pre>1400    This is Darrel. He just robbed a 7/11 and is i...
+1622    Two gorgeous dogs here. Little waddling dog is...
+1522    Meet Tassy &amp;amp; Bee. Tassy is pretty chill, b...
+1556    These two pups just met and have instantly bon...
+1229    Meet Oliviér. He takes killer selfies. Has a d...
+1224    This may be the greatest video I&#39;ve ever been ...
+1134    This is Socks. That water pup w the super legs...
+1264    When bae says they can&#39;t go out but you see th...
+1290    Meet Fynn &amp;amp; Taco. Fynn is an all-powerful ...
+1279    This is Eriq. His friend just reminded him of ...
+1976    This is Kial. Kial is either wearing a cape, w...
+1985    Two dogs in this one. Both are rare Jujitsu Py...
+1892    Here we have Pancho and Peaches. Pancho is a C...
+1929    This is Spark. He&#39;s nervous. Other dog hasn&#39;t ...
+2018    These are Peruvian Feldspars. Their names are ...
+2047    This is an Albanian 3 1/2 legged  Episcopalian...
+1727    10/10 for dog. 7/10 for cat. 12/10 for human. ...
+1829    Meet Hank and Sully. Hank is very proud of the...
+1780    Meet Holly. She&#39;s trying to teach small human-...
 872     After so many requests, this is Bretagne. She ...
 997     This is Bluebert. He just saw that both #Final...
 1013    Meet Travis and Flurp. Travis is pretty chill ...
 963     Happy 4/20 from the squad! 13/10 for all https...
 611     &#34;Yep... just as I suspected. You&#39;re not flossi...
 821     This is Bookstore and Seaweed. Bookstore is ti...
-5826    Meet Eve. She&#39;s a raging alcoholic 8/10 (would...
-5757    Meet Rufio. He is unaware of the pink legless ...
+5823    Meet Eve. She&#39;s a raging alcoholic 8/10 (would...
+5754    Meet Rufio. He is unaware of the pink legless ...
 Name: text, dtype: object</pre>
 </div>
 
@@ -19528,7 +19815,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">text_ratings_to_fix</span><span class="p">:</span>
@@ -19546,7 +19833,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="p">[</span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">text_ratings_to_fix</span><span class="p">)]</span>
@@ -19561,7 +19848,7 @@ Name: text, dtype: object</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[57]:</div>
+<div class="prompt output_prompt">Out[46]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -19602,7 +19889,7 @@ Name: text, dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>1401</th>
+      <th>1400</th>
       <td>682962037429899265</td>
       <td>2016-01-01 16:30:13 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19611,106 +19898,16 @@ Name: text, dtype: object</pre>
       <td>10</td>
       <td>10</td>
       <td>Darrel</td>
-      <td>39884</td>
-      <td>18498</td>
-      <td>6605537</td>
+      <td>39881</td>
+      <td>18499</td>
+      <td>6629640</td>
       <td>https://pbs.twimg.com/media/CXpeVzQW8AApKYb.jpg</td>
       <td>None</td>
       <td>Chihuahua</td>
       <td>0.155207</td>
     </tr>
     <tr>
-      <th>1523</th>
-      <td>677314812125323265</td>
-      <td>2015-12-17 02:30:09 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Meet Tassy &amp;amp; Bee. Tassy is pretty chill, b...</td>
-      <td>https://twitter.com/dog_rates/status/677314812...</td>
-      <td>11</td>
-      <td>10</td>
-      <td>Tassy</td>
-      <td>1751</td>
-      <td>590</td>
-      <td>6605596</td>
-      <td>https://pbs.twimg.com/media/CWZOOIUW4AAQrX_.jpg</td>
-      <td>None</td>
-      <td>Blenheim_spaniel</td>
-      <td>0.924127</td>
-    </tr>
-    <tr>
-      <th>1557</th>
-      <td>676191832485810177</td>
-      <td>2015-12-14 00:07:50 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>These two pups just met and have instantly bon...</td>
-      <td>https://twitter.com/dog_rates/status/676191832...</td>
-      <td>7</td>
-      <td>10</td>
-      <td>None</td>
-      <td>2415</td>
-      <td>1119</td>
-      <td>6605653</td>
-      <td>https://pbs.twimg.com/media/CWJQ4UmWoAIJ29t.jpg</td>
-      <td>None</td>
-      <td>Chihuahua</td>
-      <td>0.376741</td>
-    </tr>
-    <tr>
-      <th>1230</th>
-      <td>694352839993344000</td>
-      <td>2016-02-02 02:53:12 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>Meet Oliviér. He takes killer selfies. Has a d...</td>
-      <td>https://twitter.com/dog_rates/status/694352839...</td>
-      <td>5</td>
-      <td>10</td>
-      <td>Oliviér</td>
-      <td>2191</td>
-      <td>684</td>
-      <td>6605477</td>
-      <td>https://pbs.twimg.com/media/CaLWOPfWkAAo2Dt.jpg</td>
-      <td>None</td>
-      <td>Australian_terrier</td>
-      <td>0.407886</td>
-    </tr>
-    <tr>
-      <th>1225</th>
-      <td>695064344191721472</td>
-      <td>2016-02-04 02:00:27 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This may be the greatest video I've ever been ...</td>
-      <td>https://twitter.com/dog_rates/status/695064344...</td>
-      <td>13</td>
-      <td>10</td>
-      <td>None</td>
-      <td>1726</td>
-      <td>664</td>
-      <td>6605477</td>
-      <td>https://pbs.twimg.com/ext_tw_video_thumb/69506...</td>
-      <td>None</td>
-      <td>NaN</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1135</th>
-      <td>703356393781329922</td>
-      <td>2016-02-26 23:10:06 +0000</td>
-      <td>Twitter for iPhone</td>
-      <td>This is Socks. That water pup w the super legs...</td>
-      <td>https://twitter.com/dog_rates/status/703356393...</td>
-      <td>2</td>
-      <td>10</td>
-      <td>Socks</td>
-      <td>2046</td>
-      <td>423</td>
-      <td>6605446</td>
-      <td>https://pbs.twimg.com/media/CcLS6QKUcAAUuPa.jpg</td>
-      <td>None</td>
-      <td>Border_collie</td>
-      <td>0.894842</td>
-    </tr>
-    <tr>
-      <th>1623</th>
+      <th>1622</th>
       <td>674646392044941312</td>
       <td>2015-12-09 17:46:48 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19721,14 +19918,104 @@ Name: text, dtype: object</pre>
       <td>None</td>
       <td>1502</td>
       <td>544</td>
-      <td>6605671</td>
+      <td>6629683</td>
       <td>https://pbs.twimg.com/media/CVzTUGrW4AAirJH.jpg</td>
       <td>None</td>
       <td>flat-coated_retriever</td>
       <td>0.837448</td>
     </tr>
     <tr>
-      <th>1265</th>
+      <th>1522</th>
+      <td>677314812125323265</td>
+      <td>2015-12-17 02:30:09 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Meet Tassy &amp;amp; Bee. Tassy is pretty chill, b...</td>
+      <td>https://twitter.com/dog_rates/status/677314812...</td>
+      <td>11</td>
+      <td>10</td>
+      <td>Tassy</td>
+      <td>1751</td>
+      <td>590</td>
+      <td>6629657</td>
+      <td>https://pbs.twimg.com/media/CWZOOIUW4AAQrX_.jpg</td>
+      <td>None</td>
+      <td>Blenheim_spaniel</td>
+      <td>0.924127</td>
+    </tr>
+    <tr>
+      <th>1556</th>
+      <td>676191832485810177</td>
+      <td>2015-12-14 00:07:50 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>These two pups just met and have instantly bon...</td>
+      <td>https://twitter.com/dog_rates/status/676191832...</td>
+      <td>7</td>
+      <td>10</td>
+      <td>None</td>
+      <td>2412</td>
+      <td>1119</td>
+      <td>6629660</td>
+      <td>https://pbs.twimg.com/media/CWJQ4UmWoAIJ29t.jpg</td>
+      <td>None</td>
+      <td>Chihuahua</td>
+      <td>0.376741</td>
+    </tr>
+    <tr>
+      <th>1229</th>
+      <td>694352839993344000</td>
+      <td>2016-02-02 02:53:12 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>Meet Oliviér. He takes killer selfies. Has a d...</td>
+      <td>https://twitter.com/dog_rates/status/694352839...</td>
+      <td>5</td>
+      <td>10</td>
+      <td>Oliviér</td>
+      <td>2192</td>
+      <td>684</td>
+      <td>6629568</td>
+      <td>https://pbs.twimg.com/media/CaLWOPfWkAAo2Dt.jpg</td>
+      <td>None</td>
+      <td>Australian_terrier</td>
+      <td>0.407886</td>
+    </tr>
+    <tr>
+      <th>1224</th>
+      <td>695064344191721472</td>
+      <td>2016-02-04 02:00:27 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This may be the greatest video I've ever been ...</td>
+      <td>https://twitter.com/dog_rates/status/695064344...</td>
+      <td>13</td>
+      <td>10</td>
+      <td>None</td>
+      <td>1725</td>
+      <td>664</td>
+      <td>6629568</td>
+      <td>https://pbs.twimg.com/ext_tw_video_thumb/69506...</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1134</th>
+      <td>703356393781329922</td>
+      <td>2016-02-26 23:10:06 +0000</td>
+      <td>Twitter for iPhone</td>
+      <td>This is Socks. That water pup w the super legs...</td>
+      <td>https://twitter.com/dog_rates/status/703356393...</td>
+      <td>2</td>
+      <td>10</td>
+      <td>Socks</td>
+      <td>2046</td>
+      <td>424</td>
+      <td>6629545</td>
+      <td>https://pbs.twimg.com/media/CcLS6QKUcAAUuPa.jpg</td>
+      <td>None</td>
+      <td>Border_collie</td>
+      <td>0.894842</td>
+    </tr>
+    <tr>
+      <th>1264</th>
       <td>691483041324204033</td>
       <td>2016-01-25 04:49:38 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19737,16 +20024,16 @@ Name: text, dtype: object</pre>
       <td>10</td>
       <td>10</td>
       <td>None</td>
-      <td>2550</td>
+      <td>2549</td>
       <td>634</td>
-      <td>6605492</td>
+      <td>6629584</td>
       <td>https://pbs.twimg.com/media/CZikKBIWYAA40Az.jpg</td>
       <td>None</td>
       <td>bloodhound</td>
       <td>0.886232</td>
     </tr>
     <tr>
-      <th>1291</th>
+      <th>1290</th>
       <td>689835978131935233</td>
       <td>2016-01-20 15:44:48 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19757,14 +20044,14 @@ Name: text, dtype: object</pre>
       <td>Fynn</td>
       <td>2325</td>
       <td>834</td>
-      <td>6605497</td>
+      <td>6629593</td>
       <td>https://pbs.twimg.com/media/CZLKJpDWQAA-5u4.jpg</td>
       <td>None</td>
       <td>collie</td>
       <td>0.600186</td>
     </tr>
     <tr>
-      <th>1280</th>
+      <th>1279</th>
       <td>690400367696297985</td>
       <td>2016-01-22 05:07:29 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19775,14 +20062,14 @@ Name: text, dtype: object</pre>
       <td>Eriq</td>
       <td>2002</td>
       <td>498</td>
-      <td>6605498</td>
+      <td>6629588</td>
       <td>https://pbs.twimg.com/media/CZTLeBuWIAAFkeR.jpg</td>
       <td>None</td>
       <td>Pembroke</td>
       <td>0.426459</td>
     </tr>
     <tr>
-      <th>1977</th>
+      <th>1976</th>
       <td>667544320556335104</td>
       <td>2015-11-20 03:25:43 +0000</td>
       <td>Twitter Web Client</td>
@@ -19793,14 +20080,14 @@ Name: text, dtype: object</pre>
       <td>Kial</td>
       <td>899</td>
       <td>551</td>
-      <td>6605812</td>
+      <td>6629774</td>
       <td>https://pbs.twimg.com/media/CUOYBbbWIAAXQGU.jpg</td>
       <td>None</td>
       <td>Pomeranian</td>
       <td>0.412893</td>
     </tr>
     <tr>
-      <th>1986</th>
+      <th>1985</th>
       <td>667491009379606528</td>
       <td>2015-11-19 23:53:52 +0000</td>
       <td>Twitter Web Client</td>
@@ -19809,16 +20096,16 @@ Name: text, dtype: object</pre>
       <td>8</td>
       <td>10</td>
       <td>None</td>
-      <td>549</td>
+      <td>550</td>
       <td>237</td>
-      <td>6605817</td>
+      <td>6629775</td>
       <td>https://pbs.twimg.com/media/CUNniSlUYAEj1Jl.jpg</td>
       <td>None</td>
       <td>borzoi</td>
       <td>0.852088</td>
     </tr>
     <tr>
-      <th>1893</th>
+      <th>1892</th>
       <td>669037058363662336</td>
       <td>2015-11-24 06:17:19 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19829,14 +20116,14 @@ Name: text, dtype: object</pre>
       <td>None</td>
       <td>683</td>
       <td>328</td>
-      <td>6605781</td>
+      <td>6629764</td>
       <td>https://pbs.twimg.com/media/CUjlp51WcAA1vGA.jpg</td>
       <td>None</td>
       <td>Chihuahua</td>
       <td>0.803528</td>
     </tr>
     <tr>
-      <th>1930</th>
+      <th>1929</th>
       <td>668537837512433665</td>
       <td>2015-11-22 21:13:35 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19847,14 +20134,14 @@ Name: text, dtype: object</pre>
       <td>Spark</td>
       <td>259</td>
       <td>78</td>
-      <td>6605794</td>
+      <td>6629769</td>
       <td>https://pbs.twimg.com/media/CUcfnWlWsAAzlwE.jpg</td>
       <td>None</td>
       <td>Lakeland_terrier</td>
       <td>0.372988</td>
     </tr>
     <tr>
-      <th>2019</th>
+      <th>2018</th>
       <td>666835007768551424</td>
       <td>2015-11-18 04:27:09 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19865,14 +20152,14 @@ Name: text, dtype: object</pre>
       <td>None</td>
       <td>220</td>
       <td>82</td>
-      <td>6605833</td>
+      <td>6629783</td>
       <td>https://pbs.twimg.com/media/CUES51dXIAEahyG.jpg</td>
       <td>None</td>
       <td>Airedale</td>
       <td>0.448459</td>
     </tr>
     <tr>
-      <th>2048</th>
+      <th>2047</th>
       <td>666287406224695296</td>
       <td>2015-11-16 16:11:11 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19883,14 +20170,14 @@ Name: text, dtype: object</pre>
       <td>an</td>
       <td>151</td>
       <td>68</td>
-      <td>6605842</td>
+      <td>6629801</td>
       <td>https://pbs.twimg.com/media/CT8g3BpUEAAuFjg.jpg</td>
       <td>None</td>
       <td>Maltese_dog</td>
       <td>0.857531</td>
     </tr>
     <tr>
-      <th>1728</th>
+      <th>1727</th>
       <td>672248013293752320</td>
       <td>2015-12-03 02:56:30 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19901,14 +20188,14 @@ Name: text, dtype: object</pre>
       <td>None</td>
       <td>1793</td>
       <td>645</td>
-      <td>6605707</td>
+      <td>6629461</td>
       <td>https://pbs.twimg.com/media/CVROAIfWsAECA5t.jpg</td>
       <td>None</td>
       <td>Irish_terrier</td>
       <td>0.413173</td>
     </tr>
     <tr>
-      <th>1830</th>
+      <th>1829</th>
       <td>670434127938719744</td>
       <td>2015-11-28 02:48:46 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19919,14 +20206,14 @@ Name: text, dtype: object</pre>
       <td>Hank</td>
       <td>1466</td>
       <td>688</td>
-      <td>6605749</td>
+      <td>6629743</td>
       <td>https://pbs.twimg.com/media/CU3cSG8W4AIAePH.jpg</td>
       <td>None</td>
       <td>Chesapeake_Bay_retriever</td>
       <td>0.027351</td>
     </tr>
     <tr>
-      <th>1781</th>
+      <th>1780</th>
       <td>671154572044468225</td>
       <td>2015-11-30 02:31:34 +0000</td>
       <td>Twitter for iPhone</td>
@@ -19937,7 +20224,7 @@ Name: text, dtype: object</pre>
       <td>Holly</td>
       <td>750</td>
       <td>229</td>
-      <td>6605736</td>
+      <td>6629737</td>
       <td>https://pbs.twimg.com/media/CVBrhXoWIAAox_C.jpg</td>
       <td>None</td>
       <td>Labrador_retriever</td>
@@ -19953,9 +20240,9 @@ Name: text, dtype: object</pre>
       <td>14</td>
       <td>10</td>
       <td>None</td>
-      <td>37317</td>
-      <td>14682</td>
-      <td>6605337</td>
+      <td>37313</td>
+      <td>14681</td>
+      <td>6629473</td>
       <td>https://pbs.twimg.com/media/CkZVdJ6WYAAXZ5A.jpg</td>
       <td>None</td>
       <td>golden_retriever</td>
@@ -19973,7 +20260,7 @@ Name: text, dtype: object</pre>
       <td>Bluebert</td>
       <td>2527</td>
       <td>241</td>
-      <td>6605396</td>
+      <td>6629516</td>
       <td>https://pbs.twimg.com/media/CfFNk7cWAAA-hND.jpg</td>
       <td>None</td>
       <td>Siberian_husky</td>
@@ -19991,7 +20278,7 @@ Name: text, dtype: object</pre>
       <td>Travis</td>
       <td>3218</td>
       <td>788</td>
-      <td>6605400</td>
+      <td>6629518</td>
       <td>https://pbs.twimg.com/media/CemOGNjWQAEoN7R.jpg</td>
       <td>None</td>
       <td>collie</td>
@@ -20007,9 +20294,9 @@ Name: text, dtype: object</pre>
       <td>13</td>
       <td>10</td>
       <td>None</td>
-      <td>4395</td>
+      <td>4396</td>
       <td>1721</td>
-      <td>6605383</td>
+      <td>6629514</td>
       <td>https://pbs.twimg.com/media/CgiFjIpWgAA4wVp.jpg</td>
       <td>None</td>
       <td>Great_Dane</td>
@@ -20025,9 +20312,9 @@ Name: text, dtype: object</pre>
       <td>11</td>
       <td>10</td>
       <td>None</td>
-      <td>12287</td>
-      <td>3316</td>
-      <td>6605186</td>
+      <td>12289</td>
+      <td>3315</td>
+      <td>6629352</td>
       <td>https://pbs.twimg.com/media/CsrjryzWgAAZY00.jpg</td>
       <td>None</td>
       <td>cocker_spaniel</td>
@@ -20045,14 +20332,14 @@ Name: text, dtype: object</pre>
       <td>Bookstore</td>
       <td>2507</td>
       <td>604</td>
-      <td>6605316</td>
+      <td>6629467</td>
       <td>https://pbs.twimg.com/media/CmAC7ehXEAAqSuW.jpg</td>
       <td>None</td>
       <td>Chesapeake_Bay_retriever</td>
       <td>0.804363</td>
     </tr>
     <tr>
-      <th>5826</th>
+      <th>5823</th>
       <td>673295268553605120</td>
       <td>2015-12-06 00:17:55 +0000</td>
       <td>Twitter for iPhone</td>
@@ -20062,15 +20349,15 @@ Name: text, dtype: object</pre>
       <td>10</td>
       <td>Eve</td>
       <td>7857</td>
-      <td>3394</td>
-      <td>6605697</td>
+      <td>3393</td>
+      <td>6629690</td>
       <td>https://pbs.twimg.com/media/CVgGc9hWIAIe1bn.jpg</td>
       <td>pupper</td>
       <td>golden_retriever</td>
       <td>0.889241</td>
     </tr>
     <tr>
-      <th>5757</th>
+      <th>5754</th>
       <td>674737130913071104</td>
       <td>2015-12-09 23:47:22 +0000</td>
       <td>Twitter for iPhone</td>
@@ -20081,7 +20368,7 @@ Name: text, dtype: object</pre>
       <td>Rufio</td>
       <td>672</td>
       <td>100</td>
-      <td>6605671</td>
+      <td>6629683</td>
       <td>https://pbs.twimg.com/media/CV0l10AU8AAfg-a.jpg</td>
       <td>pupper</td>
       <td>Pomeranian</td>
@@ -20119,7 +20406,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># View tweets with decimals in rating in &#39;text&#39; column</span>
@@ -20145,7 +20432,7 @@ Name: text, dtype: object</pre>
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[58]:</div>
+<div class="prompt output_prompt">Out[47]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -20186,7 +20473,7 @@ Name: text, dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>1447</th>
+      <th>1446</th>
       <td>680494726643068929</td>
       <td>2015-12-25 21:06:00 +0000</td>
       <td>Twitter for iPhone</td>
@@ -20197,7 +20484,7 @@ Name: text, dtype: object</pre>
       <td>None</td>
       <td>1839</td>
       <td>531</td>
-      <td>6605567</td>
+      <td>6629645</td>
       <td>https://pbs.twimg.com/media/CXGaVxOWAAADjhF.jpg</td>
       <td>None</td>
       <td>kuvasz</td>
@@ -20213,9 +20500,9 @@ Name: text, dtype: object</pre>
       <td>75</td>
       <td>10</td>
       <td>Logan</td>
-      <td>19941</td>
+      <td>19939</td>
       <td>6892</td>
-      <td>6605176</td>
+      <td>6629346</td>
       <td>https://pbs.twimg.com/media/CurzvFTXgAA2_AP.jpg</td>
       <td>None</td>
       <td>Pomeranian</td>
@@ -20232,15 +20519,15 @@ Name: text, dtype: object</pre>
       <td>10</td>
       <td>Bella</td>
       <td>46129</td>
-      <td>10100</td>
-      <td>6604941</td>
+      <td>10098</td>
+      <td>6629277</td>
       <td>https://pbs.twimg.com/media/DELC9dZXUAADqUk.jpg</td>
       <td>None</td>
       <td>golden_retriever</td>
       <td>0.943082</td>
     </tr>
     <tr>
-      <th>4747</th>
+      <th>4745</th>
       <td>778027034220126208</td>
       <td>2016-09-20 00:24:34 +0000</td>
       <td>Twitter for iPhone</td>
@@ -20249,9 +20536,9 @@ Name: text, dtype: object</pre>
       <td>27</td>
       <td>10</td>
       <td>Sophie</td>
-      <td>7177</td>
+      <td>7176</td>
       <td>1834</td>
-      <td>6605186</td>
+      <td>6629351</td>
       <td>https://pbs.twimg.com/media/Cswbc2yWcAAVsCJ.jpg</td>
       <td>pupper</td>
       <td>clumber</td>
@@ -20270,7 +20557,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Set correct numerators for specific tweets</span>
@@ -20296,7 +20583,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="p">[</span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\d+\.\d*\/\d+)&quot;</span><span class="p">)]</span>
@@ -20321,7 +20608,7 @@ Name: text, dtype: object</pre>
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[60]:</div>
+<div class="prompt output_prompt">Out[49]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -20362,7 +20649,7 @@ Name: text, dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>1447</th>
+      <th>1446</th>
       <td>680494726643068929</td>
       <td>2015-12-25 21:06:00 +0000</td>
       <td>Twitter for iPhone</td>
@@ -20373,7 +20660,7 @@ Name: text, dtype: object</pre>
       <td>None</td>
       <td>1839</td>
       <td>531</td>
-      <td>6605567</td>
+      <td>6629645</td>
       <td>https://pbs.twimg.com/media/CXGaVxOWAAADjhF.jpg</td>
       <td>None</td>
       <td>kuvasz</td>
@@ -20389,9 +20676,9 @@ Name: text, dtype: object</pre>
       <td>9.75</td>
       <td>10</td>
       <td>Logan</td>
-      <td>19941</td>
+      <td>19939</td>
       <td>6892</td>
-      <td>6605176</td>
+      <td>6629346</td>
       <td>https://pbs.twimg.com/media/CurzvFTXgAA2_AP.jpg</td>
       <td>None</td>
       <td>Pomeranian</td>
@@ -20408,15 +20695,15 @@ Name: text, dtype: object</pre>
       <td>10</td>
       <td>Bella</td>
       <td>46129</td>
-      <td>10100</td>
-      <td>6604941</td>
+      <td>10098</td>
+      <td>6629277</td>
       <td>https://pbs.twimg.com/media/DELC9dZXUAADqUk.jpg</td>
       <td>None</td>
       <td>golden_retriever</td>
       <td>0.943082</td>
     </tr>
     <tr>
-      <th>4747</th>
+      <th>4745</th>
       <td>778027034220126208</td>
       <td>2016-09-20 00:24:34 +0000</td>
       <td>Twitter for iPhone</td>
@@ -20425,9 +20712,9 @@ Name: text, dtype: object</pre>
       <td>11.27</td>
       <td>10</td>
       <td>Sophie</td>
-      <td>7177</td>
+      <td>7176</td>
       <td>1834</td>
-      <td>6605186</td>
+      <td>6629351</td>
       <td>https://pbs.twimg.com/media/Cswbc2yWcAAVsCJ.jpg</td>
       <td>pupper</td>
       <td>clumber</td>
@@ -20465,7 +20752,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Loop on all the texts and check if it has one of pronouns of male or female</span>
@@ -20510,7 +20797,7 @@ Name: text, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dog_gender count </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">dog_gender</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
@@ -20529,7 +20816,7 @@ Name: text, dtype: object</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>dog_gender count 
- NaN       1132
+ NaN       1131
 male       636
 female     226
 Name: dog_gender, dtype: int64
@@ -20562,7 +20849,7 @@ Name: dog_gender, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">twitter_archive_clean</span><span class="p">[</span><span class="s1">&#39;prediction_algorithm&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;NaN&#39;</span><span class="p">,</span> <span class="s1">&#39;prediction_algorithm&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
@@ -20587,7 +20874,7 @@ Name: dog_gender, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -20606,26 +20893,26 @@ Name: dog_gender, dtype: int64
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-Int64Index: 1994 entries, 0 to 7092
+Int64Index: 1993 entries, 0 to 7089
 Data columns (total 16 columns):
-tweet_id                1994 non-null int64
-timestamp               1994 non-null object
-source                  1994 non-null object
-text                    1994 non-null object
-expanded_urls           1994 non-null object
-rating_numerator        1994 non-null object
-rating_denominator      1994 non-null int64
-name                    1994 non-null object
-favorites               1994 non-null int64
-retweets                1994 non-null int64
-user_followers          1994 non-null int64
-jpg_url                 1994 non-null object
-dog_stage               1994 non-null object
-prediction_algorithm    1686 non-null object
-confidence_level        1994 non-null float64
+tweet_id                1993 non-null int64
+timestamp               1993 non-null object
+source                  1993 non-null object
+text                    1993 non-null object
+expanded_urls           1993 non-null object
+rating_numerator        1993 non-null object
+rating_denominator      1993 non-null int64
+name                    1993 non-null object
+favorites               1993 non-null int64
+retweets                1993 non-null int64
+user_followers          1993 non-null int64
+jpg_url                 1993 non-null object
+dog_stage               1993 non-null object
+prediction_algorithm    1685 non-null object
+confidence_level        1993 non-null float64
 dog_gender              862 non-null object
 dtypes: float64(1), int64(5), object(10)
-memory usage: 264.8+ KB
+memory usage: 264.7+ KB
 </pre>
 </div>
 </div>
@@ -20655,7 +20942,7 @@ memory usage: 264.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="p">[</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">twitter_archive_clean</span><span class="p">[</span><span class="s1">&#39;tweet_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
@@ -20686,7 +20973,7 @@ memory usage: 264.8+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span><span class="o">.</span><span class="n">dtypes</span>
@@ -20701,7 +20988,7 @@ memory usage: 264.8+ KB
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[66]:</div>
+<div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -20742,7 +21029,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save clean DataFrame to csv file</span>
@@ -20757,7 +21044,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./Data/twitter_archive_master.csv&#39;</span><span class="p">)</span>
@@ -20777,26 +21064,26 @@ dtype: object</pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 1994 entries, 0 to 1993
+RangeIndex: 1993 entries, 0 to 1992
 Data columns (total 16 columns):
-tweet_id                1994 non-null int64
-timestamp               1994 non-null object
-source                  1994 non-null object
-text                    1994 non-null object
-expanded_urls           1994 non-null object
-rating_numerator        1994 non-null float64
-rating_denominator      1994 non-null float64
-name                    1994 non-null object
-favorites               1994 non-null int64
-retweets                1994 non-null int64
-user_followers          1994 non-null int64
-jpg_url                 1994 non-null object
-dog_stage               1994 non-null object
-prediction_algorithm    1686 non-null object
-confidence_level        1994 non-null float64
+tweet_id                1993 non-null int64
+timestamp               1993 non-null object
+source                  1993 non-null object
+text                    1993 non-null object
+expanded_urls           1993 non-null object
+rating_numerator        1993 non-null float64
+rating_denominator      1993 non-null float64
+name                    1993 non-null object
+favorites               1993 non-null int64
+retweets                1993 non-null int64
+user_followers          1993 non-null int64
+jpg_url                 1993 non-null object
+dog_stage               1993 non-null object
+prediction_algorithm    1685 non-null object
+confidence_level        1993 non-null float64
 dog_gender              862 non-null object
 dtypes: float64(3), int64(4), object(9)
-memory usage: 249.3+ KB
+memory usage: 249.2+ KB
 </pre>
 </div>
 </div>
