@@ -68,7 +68,7 @@ The tasks for this project were:
 
 * `act_report`: Communicates the insights and displays the Visualizations produced from the wrangled data.
 * `./Data/image_prediction.tsv`: Data downloaded using Requests library and URL.
-* `tweet_json.txt`: Data gathered from twitter API.
+* `./Data/tweet_json.txt`: Data gathered from twitter API.
 * `./Data/twitter-archive-enhanced.csv`: File downloaded from Udacity.
 * `./Data/twitter_archive_master.csv`: The clean DataFrame 1.
 * `./Data/twitter_image_predictions.csv`: The clean DataFrame 2.
